@@ -9,6 +9,10 @@
     <div>VUE i awful, I don't want to work with VuE anymore</div>
     <div>there are shitty examples and unclear tutorials. IT takes FUCKING 60 mins to understand this FUCKING PIECE OF MESSY STRUCTURE OF FUCKING FRONTEND CODES</div>
   <h1> just stop using VUE, this is a waste of time.</h1>
+    <h3>VUE SUX, UI designers are stupid, cannot code</h3>
+    <div>VUE Tutorials are made from nerds for nerds. They are gonna make a perfect profs at universities, bc they talk to themselves</div>
+    <div> and also </div>
+    <div> I don't see how this is good. It takes way too much time to learn, companies are gonna hate this.</div>
   </div>
 </template>
 
