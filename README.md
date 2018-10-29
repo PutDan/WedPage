@@ -1,4 +1,4 @@
-# daniel-and-putri
+#HOW-TOs
 
 ## Project setup
 ```
