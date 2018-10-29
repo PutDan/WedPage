@@ -4,7 +4,7 @@
     <h1>{{ msg }}</h1>
 
     <!-- Below is the links to pages-->
-
+    <!-- this section is in comment for now. Will be adjusted later.
     <p>
       For guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -34,6 +34,7 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    -->
   </div>
 </template>
 
@@ -60,7 +61,7 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #ba825f;
 }
 
 body{
@@ -76,20 +77,5 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-b{
-    color:#0d1e06;
-}
-c{
-  color: #664510;
-}
-d{
-  color:#e8b910;
-}
-e{
-   color:#6d1127;
 }
 </style>
