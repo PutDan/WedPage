@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
+    <!-- this part is described in the Home.Vue-->
     <h1>{{ msg }}</h1>
+
+    <!-- Below is the links to pages-->
+
     <p>
       For guide and recipes on how to configure / customize this project,<br>
       check out the
