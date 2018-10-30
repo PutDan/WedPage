@@ -1,4 +1,8 @@
-# untitled
+# ReadME!
+
+Hello, here is some ideas on how the page could look like.
+http://themes.sindevo.com/wedding-bells/,
+https://www.template.net/web-templates/website-templates/free-wedding-website-temp
 
 ## Project setup
 ```
@@ -34,3 +38,4 @@ npm run test:e2e
 ```
 npm run test:unit
 ```
+lates/
