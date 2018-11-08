@@ -26,8 +26,14 @@
   }
 
   body{
-    background-color: @deepgreen;
+    background-color: @deepgreen !important;
     align-content: center;
+  }
+  #rsvp-container{
+      text-align: center;
+  }
+  #rsvp-form{
+      display: inline-block;
   }
 
 #app {
