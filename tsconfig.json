@@ -13,10 +13,11 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
-      "mocha",
-      "chai"
     ],
     "paths": {
+      "*": [
+        "types/*"
+      ],
       "@/*": [
         "src/*"
       ]
