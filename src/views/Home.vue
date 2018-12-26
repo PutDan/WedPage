@@ -1,10 +1,14 @@
 <template>
   <div class="home">
+      <parallax-image />
       <!--<b-jumbotron id="home-header">
           <template slot="header">{{ $t("home.title") }}</template>
           <template slot="lead">
-              This is a simple hero unit, a simple jumbotron-style component for
-              calling extra attention to featured content or information.
+              <vac :end-time="new Date('Jul 6 2019 00:00:00 GMT+1').getTime()">
+          <span slot="process"
+                slot-scope="{ timeObj }">{{ `${$t("home.timer.process")}: ${timeObj.d}:${timeObj.h}:${timeObj.m}:${timeObj.s}` }}</span>
+                  <span slot="finish">{{ $t("home.timer.finish")}}</span>
+              </vac>
           </template>
           <hr class="my-4">
           <p>
@@ -29,7 +33,6 @@
 
       <!-- Text slides with image -->
       <b-carousel-slide :caption="$t('home.slide1')"
-                        :text="$t('home.date')"
                         :img-src="require('../assets/slide1.jpg')"
                         img-height="1"
                         img-width="1"
@@ -77,3 +80,11 @@
        background-color: @deepgreen !important;
    }
 </style>
+
+
+<script>
+    import ParallaxImage from "../components/ParallaxImage";
+    export default {
+        components: {ParallaxImage}
+    }
+</script>

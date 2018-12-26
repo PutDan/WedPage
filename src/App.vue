@@ -2,7 +2,7 @@
 <template>
     <div id="app">
         <div id="nav">
-            <b-navbar id="navbar" toggleable="md" variant="info" type="dark">
+            <b-navbar id="navbar" toggleable="md" variant="dark" type="dark" sticky=true>
                 <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
                 <b-navbar-brand to="/home">Daniel&Putri</b-navbar-brand>
                 <b-collapse is-nav id="nav_collapse">
@@ -49,6 +49,7 @@
                     </b-navbar-nav>
                 </b-collapse>
             </b-navbar>
+            <hr id="divider">
         </div>
         <router-view/>
     </div>
@@ -99,6 +100,13 @@
         text-align: center;
     }
 
+    #divider {
+        background-color: @richgold;
+        margin-top: 0;
+        margin-bottom: 100px;
+        padding-bottom: 2px;
+    }
+
     body {
         background-color: @deepgreen !important;
         align-content: center;
@@ -106,7 +114,6 @@
 
     #navbar {
         background-color: @deepgreen !important;
-        color: @deepgreen !important;
     }
 
     #rsvp-container {

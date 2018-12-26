@@ -7,9 +7,13 @@ export default {
         languages: 'Sprachen',
     },
     home: {
-        text: 'TERMIN VORMERKEN!!',
+        title: 'Daniel und Putri heiraten',
         date: 'Samstag, den 06.07.2019',
         slide1: 'Wir werden heiraten!',
+        timer: {
+            process: 'Zeit bis zur Hochzeit',
+            finish: 'Es ist der große Tag, jetzt aber schnell los!',
+        },
     },
     about: {
         title: 'About Us',

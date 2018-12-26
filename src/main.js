@@ -7,6 +7,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import vuexI18n from 'vuex-i18n';
+import vueAwesomeCountdown from 'vue-awesome-countdown';
 Vue.use(Vuex);
 const store = new Vuex.Store({});
 Vue.use(vuexI18n.plugin, store);
@@ -20,6 +21,7 @@ Vue.i18n.add('in', translationsIn);
 Vue.i18n.set('en');
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
+Vue.use(vueAwesomeCountdown, 'vac');
 // noinspection JSUnusedGlobalSymbols
 new Vue({
     router,

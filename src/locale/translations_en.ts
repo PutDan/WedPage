@@ -7,11 +7,15 @@ export default {
         languages: 'Languages',
     },
     home: {
-        text: 'SAVE THE DATE!!',
+        title: 'We are getting married',
         date: 'Saturday, 07/06/2019',
         slide1: 'We are getting married!',
+        timer: {
+            process: 'Time till the Wedding',
+            finish: 'It\'s the big day, get going!',
+        },
     },
     about: {
-        title: 'Über uns',
+        title: 'About Us',
     },
 };
