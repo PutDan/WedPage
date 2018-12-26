@@ -17,7 +17,6 @@ import translationsEn from './locale/translations_en';
 import translationsDe from './locale/translations_de';
 import translationsIn from './locale/translations_in';
 
-// add translations directly to the application
 Vue.i18n.add('en', translationsEn);
 Vue.i18n.add('de', translationsDe);
 Vue.i18n.add('in', translationsIn);
@@ -34,4 +33,3 @@ new Vue({
     store,
     render: (h) => h(App),
 }).$mount('#app');
-

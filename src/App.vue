@@ -2,7 +2,7 @@
 <template>
     <div id="app">
         <div id="nav">
-            <b-navbar toggleable="md" variant="info" type="dark">
+            <b-navbar id="navbar" toggleable="md" variant="info" type="dark">
                 <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
                 <b-navbar-brand to="/home">Daniel&Putri</b-navbar-brand>
                 <b-collapse is-nav id="nav_collapse">
@@ -14,8 +14,8 @@
                     </b-navbar-nav>
                     <!-- Right aligned nav items -->
                     <b-navbar-nav class="ml-auto">
-                        <b-nav-item-dropdown text="Language" right>
-                            <b-dropdown-item class="locale_en" v-on:click="selectLanguage">
+                        <b-nav-item-dropdown v-bind:text="$t('link.languages')" right>
+                            <b-dropdown-item class="locale_en" v-bind:disabled="activeEn" v-on:click="selectLanguage">
                                 <b-container class="locale_en">
                                     <b-row class="locale_en">
                                         <b-col class="locale_en">EN</b-col>
@@ -25,7 +25,7 @@
                                     </b-row>
                                 </b-container>
                             </b-dropdown-item>
-                            <b-dropdown-item class="locale_de" v-on:click="selectLanguage">
+                            <b-dropdown-item class="locale_de" v-bind:disabled="activeDe" v-on:click="selectLanguage">
                                 <b-container class="locale_de">
                                     <b-row class="locale_de">
                                         <b-col class="locale_de">DE</b-col>
@@ -35,7 +35,7 @@
                                     </b-row>
                                 </b-container>
                             </b-dropdown-item>
-                            <b-dropdown-item class="locale_in" v-on:click="selectLanguage">
+                            <b-dropdown-item class="locale_in" v-bind:disabled="activeIn" v-on:click="selectLanguage">
                                 <b-container class="locale_in">
                                     <b-row class="locale_in">
                                         <b-col class="locale_in">IN</b-col>
@@ -55,15 +55,10 @@
 </template>
 
 <script>
-    //v-bind:class="{ lang_active: activeEn }"
-    //v-bind:class="{ lang_active: activeDe }"
-    //v-bind:class="{ lang_active: activeIn }"
     import iconEn from 'svg-country-flags/svg/us.svg';
     import iconDe from 'svg-country-flags/svg/de.svg';
     import iconIn from 'svg-country-flags/svg/id.svg';
     import Vue from 'vue';
-
-    const currentLanguage = Vue.i18n.locale();
 
     export default {
         data() {
@@ -73,17 +68,17 @@
                 iconIn,
             };
         },
-        /* computed: {
+         computed: {
             activeEn() {
-                return currentLanguage === 'en';
+                return Vue.i18n.locale() === 'en';
             },
             activeDe() {
-                return currentLanguage === 'de';
+                return Vue.i18n.locale() === 'de';
             },
             activeIn() {
-                return currentLanguage === 'in';
+                return Vue.i18n.locale() === 'in';
             },
-        },*/
+        },
         methods: {
             selectLanguage(event) {
                 if (event.target.className.includes('locale_en')) {
@@ -99,15 +94,7 @@
 </script>
 
 <style lang="less">
-    /** This is the color scheme for the page*/
-    @deepgreen: #0d1e06;
-    @intensivered: #6d1127;
-    @richgold: #e8b910;
-    @woodbrown: #664510;
-    @activenav: #ffd84d;
-    @linkedel: #ba825f;
-    @flowerred: #8C151D;
-
+    @import "style/App.less";
     html {
         text-align: center;
     }
@@ -115,6 +102,11 @@
     body {
         background-color: @deepgreen !important;
         align-content: center;
+    }
+
+    #navbar {
+        background-color: @deepgreen !important;
+        color: @deepgreen !important;
     }
 
     #rsvp-container {

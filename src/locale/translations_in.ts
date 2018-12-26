@@ -1,15 +1,17 @@
-const translationsIn = {
+export default {
     link: {
         home_link: 'Home',
         about_link: 'About',
         rsvp_link: 'RSVP',
-        photos_link: 'Photos',
+        photos_link: 'Foto',
+        languages: 'Bahasa',
     },
     home: {
-        invite: 'SAVE THE DATE',
+        text: 'SAVE THE DATE!!',
+        date: 'Samstag, den 06.07.2019',
+        slide1: 'We are getting married!',
     },
-};
-
-export default {
-    translationsIn,
+    about: {
+        title: 'About Us',
+    },
 };
