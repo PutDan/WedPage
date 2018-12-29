@@ -93,6 +93,19 @@
     };
 </script>
 
-<style scoped>
+<style scoped lang="less">
+    @import "../style/App.less";
+
+    .RSVP {
+        background-color: @deepgreen !important;
+    }
+
+    #rsvp-container {
+        text-align: center;
+    }
+
+    #rsvp-form {
+        display: inline-block;
+    }
 
 </style>

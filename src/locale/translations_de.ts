@@ -18,4 +18,18 @@ export default {
     about: {
         title: 'About Us',
     },
+    footer: {
+        by: "Designed und implementiert von den Besitzern",
+        and: "und",
+        copyright_link: "Impressum",
+    },
+    copyright: {
+        title: "Impressum",
+        owner: "Anbieter",
+        content: "Bei redaktionellen Inhalten",
+        contentlaw: "Verantwortlich nach § 55 Abs.2 RStV",
+        icons: "Icons erstellt von",
+        iconsfrom: "von",
+        iconslicense: "sind lizenziert durch",
+    },
 };

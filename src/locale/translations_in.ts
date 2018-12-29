@@ -18,4 +18,18 @@ export default {
     about: {
         title: 'About Us',
     },
+    footer: {
+        by: "Owned, designed and implemented by",
+        and: "dan",
+        copyright_link: "Copyright and Legal Notices",
+    },
+    copyright: {
+        title: "Copyright Notice",
+        owner: "Owner",
+        content: "Bei redaktionellen Inhalten",
+        contentlaw: "",
+        icons: "Icons made by",
+        iconsfrom: "dari",
+        iconslicense: "are licensed by",
+    },
 };
