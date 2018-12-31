@@ -10,8 +10,8 @@
 </template>
 <script>
     export default {
-        name: 'PersonContent'
-    }
+        name: 'PersonContent',
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

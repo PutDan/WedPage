@@ -13,7 +13,7 @@
     import iconIn from 'svg-country-flags/svg/id.svg';
     import Vue from 'vue';
     import CustomNavbar from './components/CustomNavbar';
-    import CustomFooter from "./components/CustomFooter";
+    import CustomFooter from './components/CustomFooter';
 
     export default {
         components: {CustomFooter, CustomNavbar },

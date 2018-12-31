@@ -60,9 +60,9 @@
             iconDe: {},
             iconEn: {},
             iconIn: {},
-            selectLanguage: {}
-        }
-    }
+            selectLanguage: {},
+        },
+    };
 </script>
 <style lang="less" scoped>
     @import "../style/App.less";

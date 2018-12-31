@@ -8,8 +8,8 @@
         mounted() {
             const circleType = new CircleType(document.getElementById('names'));
             circleType.radius(200).dir(1);
-        }
-    }
+        },
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

@@ -11,8 +11,8 @@
 </template>
 <script>
     export default {
-        name: 'custom-footer'
-    }
+        name: 'custom-footer',
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

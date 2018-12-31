@@ -12,12 +12,12 @@
     </b-container>
 </template>
 <script>
-    import PersonContent from "./PersonContent";
+    import PersonContent from './PersonContent';
 
     export default {
         name: 'about-content',
-        components: {PersonContent}
-    }
+        components: {PersonContent},
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

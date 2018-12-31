@@ -38,7 +38,7 @@
   import ParallaxImage from '../components/ParallaxImage';
   import CountdownContent from '../components/CountdownContent';
   import CircularNames from '../components/CircularNames';
-  import AboutContent from "../components/AboutContent";
+  import AboutContent from '../components/AboutContent';
 
   export default {
         components: {
