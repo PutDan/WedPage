@@ -1,5 +1,6 @@
 <template>
     <b-container fixed id="about-content" class="border border-warning">
+        <a id="about"></a>
         <b-row>
             <b-col class="border-right">
                 <PersonContent/>

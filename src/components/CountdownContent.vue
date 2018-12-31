@@ -55,8 +55,8 @@
                 </vac>
             </template>
             <hr class="my-4">
-            <b-btn variant="primary" href="#">{{ $t("timer.button.rsvp") }}</b-btn>
-            <b-btn variant="success" href="#">{{ $t("timer.button.learn_more") }}</b-btn>
+            <b-btn variant="primary" to="/rsvp">{{ $t("timer.button.rsvp") }}</b-btn>
+            <b-btn variant="success" href="#about">{{ $t("timer.button.learn_more") }}</b-btn>
         </b-jumbotron>
     </div>
 </template>
