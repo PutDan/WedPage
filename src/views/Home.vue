@@ -1,32 +1,29 @@
 <template>
-  <div class="home">
+  <b-container class="home">
     <parallax-image />
-    <circular-names/>
+    <circular-names id="names"/>
     <countdown-content id="countdown"/>
     <about-content id="about"/>
-  </div>
+  </b-container>
 </template>
 
 <style lang="less">
     @import "../style/App.less";
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=Charm');
-    #home-header {
-       background-color: @deepgreen !important;
-   }
     #countdown {
       text-align: center;
-      position: absolute;
-      display: inline-block;
-      margin-top: -17%;
-      margin-left: -25%;
+      margin-top: 150px;
     }
     #names {
-      text-align: center;
       position: absolute;
-      display: inline-block;
-      margin-top: -40%;
-      margin-left: -5%;
+      display: block;
+      top: 200px;
+      left: -8%;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      text-align: center;
     }
     #about {
       margin-top: 10%;

@@ -8,6 +8,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import vuexI18n from 'vuex-i18n';
 import vueAwesomeCountdown from 'vue-awesome-countdown';
+import vueResizeText from 'vue-resize-text';
 Vue.use(Vuex);
 const store = new Vuex.Store({});
 Vue.use(vuexI18n.plugin, store);
@@ -22,6 +23,7 @@ Vue.i18n.set('en');
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(vueAwesomeCountdown, 'vac');
+Vue.use(vueResizeText);
 // noinspection JSUnusedGlobalSymbols
 new Vue({
     router,

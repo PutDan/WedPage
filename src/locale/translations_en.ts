@@ -6,13 +6,18 @@ export default {
         photos_link: 'Photos',
         languages: 'Languages',
     },
-    home: {
-        title: 'We are getting married',
+    circular: {
+        headline: 'are getting married',
+    },
+    timer: {
         date: 'Saturday, 07/06/2019',
-        slide1: 'We are getting married!',
-        timer: {
-            process: 'Time till the Wedding',
-            finish: 'It\'s the big day, get going!',
+        days: 'Days',
+        hours: 'Hours',
+        minutes: 'Minutes',
+        seconds: 'Seconds',
+        button: {
+            rsvp: 'RSVP',
+            learn_more: 'About us',
         },
     },
     about: {

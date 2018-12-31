@@ -6,13 +6,18 @@ export default {
         photos_link: 'Fotos',
         languages: 'Sprachen',
     },
-    home: {
-        title: 'Daniel und Putri heiraten',
-        date: 'Samstag, den 06.07.2019',
-        slide1: 'Wir werden heiraten!',
-        timer: {
-            process: 'Zeit bis zur Hochzeit',
-            finish: 'Es ist der große Tag, jetzt aber schnell los!',
+    circular: {
+        headline: 'heiraten dieses Jahr',
+    },
+    timer: {
+        date: 'Samstag, 06.07.2019',
+        days: 'Tage',
+        hours: 'Stunden',
+        minutes: 'Minuten',
+        seconds: 'Sekunden',
+        button: {
+            rsvp: 'RSVP',
+            learn_more: 'Über uns',
         },
     },
     about: {
