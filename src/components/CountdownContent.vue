@@ -1,15 +1,15 @@
 <template>
-    <div id="container" class="border-warning" v-resize-text="{ratio: '1.6', minFontSize: '30px', maxFontSize: '65px', delay: '20'}">
+    <div id="container">
         <b-jumbotron fixed id="countdown" border-variant="warning" class="charm">
             <template slot="header">
-                <div v-resize-text="{ratio: '1.6', minFontSize: '30px', maxFontSize: '65px', delay: '20'}">
+                <div v-resize-text="{ratio: '1.2', minFontSize: '30px', maxFontSize: '255px', delay: '20'}">
                 <!--suppress CheckImageSize -->
                 <img src="../assets/wedding-rings.svg" height="75px" alt="Wedding time" /> {{ $t("timer.date") }} <img src="../assets/wedding-rings.svg" height="75px" alt="Wedding time" />
                 </div>
             </template>
             <template slot="lead">
                 <br />
-                <vac :end-time="new Date('Jul 6 2019 00:00:00 GMT+1').getTime()">
+                <vac :end-time="new Date('Jul 25 2019 00:00:00 GMT+1').getTime()">
                     <span slot="process"
                         slot-scope="{ timeObj }">
                         <b-container>
@@ -17,8 +17,8 @@
                                   <b-col class="border">
                                       <b-row>
                                           <b-col>
-                                              <p class="time">{{` ${timeObj.d} `}}</p>
-                                              <p class="description">{{ $t("timer.days") }}</p>
+                                              <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '25px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.d} `}}</p>
+                                              <p class="description"  v-resize-text="{ratio: '1.2', minFontSize: '25px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.days") }}</p>
                                           </b-col>
                                       </b-row>
                                   </b-col>
@@ -26,16 +26,8 @@
                                   <b-col class="border">
                                       <b-row>
                                           <b-col>
-                                              <p class="time">{{` ${timeObj.h} `}}</p>
-                                              <p class="description">{{ $t("timer.hours") }}</p>
-                                          </b-col>
-                                      </b-row>
-                                  </b-col>
-                                  <b-col></b-col>
-                                  <b-col class="border">
-                                      <b-row>
-                                          <b-col><p class="time">{{` ${timeObj.m} `}}</p>
-                                              <p class="description">{{ $t("timer.minutes") }}</p>
+                                              <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '25px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.h} `}}</p>
+                                              <p class="description"  v-resize-text="{ratio: '1.2', minFontSize: '25px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.hours") }}</p>
                                           </b-col>
                                       </b-row>
                                   </b-col>
@@ -43,8 +35,17 @@
                                   <b-col class="border">
                                       <b-row>
                                           <b-col>
-                                              <p class="time">{{` ${timeObj.s} `}}</p>
-                                              <p class="description">{{ $t("timer.seconds") }}</p>
+                                              <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '25px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.m} `}}</p>
+                                              <p class="description"  v-resize-text="{ratio: '1.2', minFontSize: '25px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.minutes") }}</p>
+                                          </b-col>
+                                      </b-row>
+                                  </b-col>
+                                  <b-col></b-col>
+                                  <b-col class="border">
+                                      <b-row>
+                                          <b-col>
+                                              <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '25px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.s} `}}</p>
+                                              <p class="description"  v-resize-text="{ratio: '1.2', minFontSize: '25px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.seconds") }}</p>
                                           </b-col>
                                       </b-row>
                                   </b-col>
@@ -71,6 +72,8 @@
     @import "../style/App.less";
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=Charm');
+    //noinspection CssUnknownTarget
+    @import (css) url('https://fonts.googleapis.com/css?family=Lato');
 
     .charm {
         font-family: 'Charm', cursive;
@@ -85,7 +88,7 @@
     }
 
     .description {
-        font-size: 15px;
+        font-size: 25px;
     }
 
     #countdown-progress {

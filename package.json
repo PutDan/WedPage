@@ -33,7 +33,7 @@
     "@types/vuex-i18n": "^1.10.0",
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-typescript": "^3.0.5",
-    "@vue/cli-service": "^3.0.5",
+    "@vue/cli-service": "^3.2.2",
     "css-loader": "^1.0.1",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",

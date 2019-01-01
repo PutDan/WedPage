@@ -1,8 +1,9 @@
 <template>
-  <b-container class="home">
+  <b-container id="home">
     <parallax-image />
     <circular-names id="names"/>
     <countdown-content id="countdown"/>
+    <right-sided-content class="float-right" id="right-side"/>
     <about-content id="about"/>
   </b-container>
 </template>
@@ -12,22 +13,24 @@
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=Charm');
     #countdown {
-      text-align: center;
-      margin-top: 150px;
+      margin-top: -22%;
     }
     #names {
       position: absolute;
-      display: block;
       top: 200px;
       left: -8%;
       right: 0;
       bottom: 0;
-      z-index: 0;
       text-align: center;
     }
     #about {
-      margin-top: 10%;
+      margin-top: 500px;
     }
+
+    #home {
+      overflow: auto;
+    }
+
 </style>
 
 
@@ -36,9 +39,11 @@
   import CountdownContent from '../components/CountdownContent';
   import CircularNames from '../components/CircularNames';
   import AboutContent from '../components/AboutContent';
+  import RightSidedContent from '../components/RightSidedContent';
 
   export default {
         components: {
+          RightSidedContent,
           AboutContent,
           CircularNames,
           CountdownContent,
