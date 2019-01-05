@@ -20,6 +20,17 @@ export default {
             learn_more: 'About us',
         },
     },
+    rightside: {
+        title: 'Misa Pernikahan',
+        where: 'Lokasi:',
+        when: 'Waktu:',
+        date: '6. Juli, 2019, Jam TBD',
+        maps: 'Open in Google Maps',
+    },
+    leftside: {
+        title: 'Reception',
+        date: '6. Juli, 2019, Jam TBD',
+    },
     about: {
         title: 'About Us',
     },

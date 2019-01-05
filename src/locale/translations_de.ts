@@ -20,6 +20,17 @@ export default {
             learn_more: 'Über uns',
         },
     },
+    rightside: {
+        title: 'Gottesdienst',
+        where: 'Wo?',
+        when: 'Wann?',
+        date: '6. Juli, 2019, Zeit TBD',
+        maps: 'In Google Maps öffnen',
+    },
+    leftside: {
+        title: 'Feier',
+        date: '6. Juli, 2019, Zeit TBD',
+    },
     about: {
         title: 'About Us',
     },

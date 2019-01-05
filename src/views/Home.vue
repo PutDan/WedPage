@@ -3,7 +3,8 @@
     <parallax-image />
     <circular-names id="names"/>
     <countdown-content id="countdown"/>
-    <right-sided-content class="float-right" id="right-side"/>
+    <right-sided-content id="right-side"/>
+    <left-sided-content id="left-side"/>
     <about-content id="about"/>
   </b-container>
 </template>
@@ -23,6 +24,13 @@
       bottom: 0;
       text-align: center;
     }
+    #right-side {
+      margin-left: 33%;
+      margin-top: 100px;
+    }
+    #left-side {
+      margin-top: 100px;
+    }
     #about {
       margin-top: 500px;
     }
@@ -40,6 +48,7 @@
   import CircularNames from '../components/CircularNames';
   import AboutContent from '../components/AboutContent';
   import RightSidedContent from '../components/RightSidedContent';
+  import LeftSidedContent from '../components/LeftSidedContent';
 
   export default {
         components: {
@@ -48,6 +57,7 @@
           CircularNames,
           CountdownContent,
           ParallaxImage,
+          LeftSidedContent,
         },
     };
 </script>

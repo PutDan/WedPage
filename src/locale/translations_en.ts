@@ -20,6 +20,17 @@ export default {
             learn_more: 'About us',
         },
     },
+    rightside: {
+        title: 'Church Ceremony',
+        where: 'Where?',
+        when: 'When?',
+        date: '6th of July, 2019, Time TBD',
+        maps: 'Open in Google Maps',
+    },
+    leftside: {
+        title: 'Reception',
+        date: '6th of July, 2019, Time TBD',
+    },
     about: {
         title: 'About Us',
     },

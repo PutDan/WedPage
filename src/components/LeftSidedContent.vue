@@ -1,17 +1,14 @@
 <template>
     <b-container id="container">
         <b-modal centered v-model="showMapsModal" id="mapsModal">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10468.359162702543!2d8.4200062!3d49.0088767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcec0ba59ed6771b5!2sKirche+St.+Bernhard!5e0!3m2!1sen!2sde!4v1546345635638" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>        </b-modal>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10468.359162702543!2d8.4200062!3d49.0088767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcec0ba59ed6771b5!2sKirche+St.+Bernhard!5e0!3m2!1sen!2sde!4v1546345635638" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>        </b-modal>
         <b-row>
             <b-col class="border" col cols="8" id="content">
                 <b-row>
-                    <b-col class="col-xs-auto" cols="4">
-                        <b-img alt="St. Bernhard" rounded="circle" thumbnail :src="require('../assets/church.jpg')"></b-img>
-                    </b-col>
                     <b-col col cols="8">
                         <b-row>
                             <b-col>
-                                <h1 id="title" v-resize-text="{ratio: '0.8', minFontSize: '20px', maxFontSize: '49px', delay: '20'}">{{ $t("rightside.title" ) }}</h1>
+                                <h1 id="title" v-resize-text="{ratio: '0.8', minFontSize: '20px', maxFontSize: '49px', delay: '20'}">{{ $t("leftside.title" ) }}</h1>
                             </b-col>
                         </b-row>
                         <b-row>
@@ -19,8 +16,8 @@
                                 <b-row><b-col><h3 v-resize-text="{ratio: '1.1', minFontSize: '12px', maxFontSize: '25px', delay: '20'}"><u>{{ $t("rightside.where") }}</u></h3></b-col></b-row>
                                 <b-row>
                                     <b-col id="address">
-                                        <b-row-form><b-col v-resize-text="{ratio: '1.1', minFontSize: '8px', maxFontSize: '18px', delay: '20'}">St. Bernhard</b-col></b-row-form>
-                                        <b-row-form><b-col v-resize-text="{ratio: '1.1', minFontSize: '8px', maxFontSize: '18px', delay: '20'}">Bernhardstr. 15</b-col></b-row-form>
+                                        <b-row-form><b-col v-resize-text="{ratio: '1.1', minFontSize: '8px', maxFontSize: '18px', delay: '20'}">Schalander - Hoepfner Burghof</b-col></b-row-form>
+                                        <b-row-form><b-col v-resize-text="{ratio: '1.1', minFontSize: '8px', maxFontSize: '18px', delay: '20'}">Haid-und-Neu-Straße 18</b-col></b-row-form>
                                         <b-row-form><b-col v-resize-text="{ratio: '1.1', minFontSize: '8px', maxFontSize: '18px', delay: '20'}">76131 Karlsruhe</b-col></b-row-form>
                                         <b-row><b-col><i class="material-icons" @click="showMapsModal = true">place</i>
                                             <a id="maps" class="d-none d-md-inline-block" @click="showMapsModal = true">{{ $t("rightside.maps") }}</a></b-col>
@@ -32,9 +29,12 @@
                         <b-row>
                             <b-col>
                                 <h3 v-resize-text="{ratio: '1.1', minFontSize: '12px', maxFontSize: '25px', delay: '20'}"><u>{{ $t("rightside.when") }}</u></h3>
-                                <p v-resize-text="{ratio: '1.1', minFontSize: '8px', maxFontSize: '18px', delay: '20'}">{{ $t("rightside.date") }}</p>
+                                <p v-resize-text="{ratio: '1.1', minFontSize: '8px', maxFontSize: '18px', delay: '20'}">{{ $t("leftside.date") }}</p>
                             </b-col>
                         </b-row>
+                    </b-col>
+                    <b-col col cols="4">
+                        <b-img fluid alt="Höpfner Brewery" rounded="circle" thumbnail :src="require('../assets/hoepfner.jpg')"></b-img>
                     </b-col>
                 </b-row>
             </b-col>
@@ -43,7 +43,7 @@
 </template>
 <script>
     export default {
-        name: 'right-sided-content',
+        name: 'left-sided-content',
         data()  {
             return {
                 showMapsModal: false,
