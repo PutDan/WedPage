@@ -2,9 +2,9 @@
     <div id="container">
         <b-jumbotron fixed id="countdown" border-variant="warning" class="charm">
             <template slot="header">
-                <div v-resize-text="{ratio: '1.2', minFontSize: '30px', maxFontSize: '255px', delay: '20'}">
+                <div v-resize-text="{ratio: '1.2', minFontSize: '30px', maxFontSize: '100px', delay: '20'}">
                 <!--suppress CheckImageSize -->
-                <img src="../assets/wedding-rings.svg" height="75px" alt="Wedding time" /> {{ $t("timer.date") }} <img src="../assets/wedding-rings.svg" height="75px" alt="Wedding time" />
+                <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" /> {{ $t("timer.date") }} <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" />
                 </div>
             </template>
             <template slot="lead">

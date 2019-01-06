@@ -1,7 +1,8 @@
 <template>
     <b-container id="container">
         <b-modal centered v-model="showMapsModal" id="mapsModal">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10468.359162702543!2d8.4200062!3d49.0088767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcec0ba59ed6771b5!2sKirche+St.+Bernhard!5e0!3m2!1sen!2sde!4v1546345635638" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>        </b-modal>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10467.603032511342!2d8.426661!3d49.012473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9e5a1ff56ad8e19!2sHoepfner+Burghof+Brauereiausschank+-+Hotel!5e0!3m2!1sen!2sde!4v1546772890208" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </b-modal>
         <b-row>
             <b-col class="border" col cols="8" id="content">
                 <b-row>

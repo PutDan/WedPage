@@ -1,5 +1,5 @@
 <template>
-  <b-container id="home">
+  <b-container fluid id="home">
     <parallax-image />
     <circular-names id="names"/>
     <countdown-content id="countdown"/>
@@ -14,9 +14,10 @@
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=Charm');
     #countdown {
-      margin-top: -22%;
+      margin-top: -16%;
     }
     #names {
+      float: top;
       position: absolute;
       top: 200px;
       left: -8%;
@@ -25,14 +26,16 @@
       text-align: center;
     }
     #right-side {
-      margin-left: 33%;
+      float: right;
       margin-top: 100px;
     }
     #left-side {
+      float: left;
       margin-top: 100px;
     }
     #about {
-      margin-top: 500px;
+      float: bottom;
+      margin-top: 1000px;
     }
 
     #home {
