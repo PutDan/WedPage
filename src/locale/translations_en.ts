@@ -33,6 +33,7 @@ export default {
     },
     about: {
         title: 'About Us',
+        met: 'How we Met',
     },
     footer: {
         by: 'Owned, designed and implemented by',
@@ -47,5 +48,17 @@ export default {
         icons: 'Icons made by',
         iconsfrom: 'from',
         iconslicense: 'are licensed by',
+    },
+    person: {
+        daniel: {
+            title: 'The Groom',
+            description: 'Mr. Daniel Hunter Draper',
+            born: '12th of November, 1992 in Frankenthal, Germany',
+        },
+        putri: {
+            title: 'The Bride',
+            description: 'Ms. Patricia Putriningsih Pesahnia Djami',
+            born: '29th of March, 1991 in Jakarta, Indonesia',
+        },
     },
 };

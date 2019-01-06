@@ -9,6 +9,10 @@ import Vuex from 'vuex';
 import vuexI18n from 'vuex-i18n';
 import vueAwesomeCountdown from 'vue-awesome-countdown';
 import vueResizeText from 'vue-resize-text';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import VueMouseParallax from 'vue-mouse-parallax';
+Vue.use(VueMouseParallax);
 Vue.use(Vuex);
 const store = new Vuex.Store({});
 Vue.use(vuexI18n.plugin, store);
@@ -26,6 +30,9 @@ Vue.use(vueAwesomeCountdown, 'vac');
 Vue.use(vueResizeText);
 // noinspection JSUnusedGlobalSymbols
 new Vue({
+    created() {
+        AOS.init();
+    },
     router,
     store,
     render: (h) => h(App),

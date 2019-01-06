@@ -32,6 +32,7 @@ export default {
         date: '6. Juli, 2019, Jam TBD',
     },
     about: {
+        met: 'How we Met',
         title: 'About Us',
     },
     footer: {
@@ -47,5 +48,17 @@ export default {
         icons: 'Icons made by',
         iconsfrom: 'dari',
         iconslicense: 'are licensed by',
+    },
+    person: {
+        daniel: {
+            title: 'The Groom',
+            description: 'Mr. Daniel Hunter Draper',
+            born: '12th of November, 1992 in Frankenthal, Germany',
+        },
+        putri: {
+            title: 'The Bride',
+            description: 'Ms. Patricia Putriningsih Pesahnia Djami',
+            born: '29th of March, 1991 in Jakarta, Indonesia',
+        },
     },
 };

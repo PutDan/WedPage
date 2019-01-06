@@ -1,9 +1,9 @@
 <template>
     <div id="app">
-        <custom-navbar :active-de="activeDe" :active-en="activeEn" :active-in="activeIn" :icon-de="iconDe"
+        <custom-navbar id="navbar" :active-de="activeDe" :active-en="activeEn" :active-in="activeIn" :icon-de="iconDe"
                       :icon-en="iconEn" :icon-in="iconIn" :select-language="selectLanguage"/>
         <router-view/>
-        <custom-footer/>
+        <custom-footer id="footer"/>
     </div>
 </template>
 

@@ -2,10 +2,10 @@
   <b-container fluid id="home">
     <parallax-image />
     <circular-names id="names"/>
-    <countdown-content id="countdown"/>
-    <right-sided-content id="right-side"/>
-    <left-sided-content id="left-side"/>
-    <about-content id="about"/>
+    <countdown-content data-aos="slide-down" id="countdown"/>
+    <right-sided-content data-aos="fade-right" id="right-side"/>
+    <left-sided-content data-aos="fade-left" id="left-side"/>
+    <about-content data-aos="fade-up" id="about"/>
   </b-container>
 </template>
 
@@ -14,8 +14,9 @@
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=Charm');
     #countdown {
-      margin-top: -16%;
+      margin-top: 10%;
     }
+
     #names {
       float: top;
       position: absolute;
@@ -25,23 +26,22 @@
       bottom: 0;
       text-align: center;
     }
+
     #right-side {
       float: right;
       margin-top: 100px;
     }
+
     #left-side {
       float: left;
       margin-top: 100px;
     }
+
     #about {
       float: bottom;
-      margin-top: 1000px;
+      z-index: 10;
+      margin-top: 950px;
     }
-
-    #home {
-      overflow: auto;
-    }
-
 </style>
 
 

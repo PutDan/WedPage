@@ -32,7 +32,8 @@ export default {
         date: '6. Juli, 2019, Zeit TBD',
     },
     about: {
-        title: 'About Us',
+        title: 'Über uns',
+        met: 'Wie wir uns kennengelernt haben',
     },
     footer: {
         by: 'Designed und implementiert von den Besitzern',
@@ -47,5 +48,17 @@ export default {
         icons: 'Icons erstellt von',
         iconsfrom: 'von',
         iconslicense: 'sind lizenziert durch',
+    },
+    person: {
+        daniel: {
+            title: 'Bräutigam',
+            description: 'Herr Daniel Hunter Draper',
+            born: '12. November, 1992 in Frankenthal, Deutschland',
+        },
+        putri: {
+            title: 'Braut',
+            description: 'Frau Patricia Putriningsih Pesahnia Djami',
+            born: '29. März, 1991 in Jakarta, Indonesien',
+        },
     },
 };
