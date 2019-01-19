@@ -10,7 +10,8 @@ export default {
         headline: 'are getting married',
     },
     timer: {
-        date: 'Saturday, 07/06/2019',
+        day: 'Saturday,',
+        date: '07/06/2019',
         days: 'Days',
         hours: 'Hours',
         minutes: 'Minutes',

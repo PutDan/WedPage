@@ -10,7 +10,8 @@ export default {
         headline: 'heiraten dieses Jahr',
     },
     timer: {
-        date: 'Samstag, 06.07.2019',
+        day: 'Samstag,',
+        date: '06.07.2019',
         days: 'Tage',
         hours: 'Stunden',
         minutes: 'Minuten',

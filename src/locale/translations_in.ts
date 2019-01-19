@@ -10,7 +10,8 @@ export default {
         headline: 'are getting married',
     },
     timer: {
-        date: 'Saturday, 07/06/2019',
+        day: 'Sabtu,',
+        date: '07/06/2019',
         days: 'Hari',
         hours: 'Jam',
         minutes: 'Menit',

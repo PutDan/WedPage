@@ -2,10 +2,22 @@
     <div id="container">
         <b-jumbotron fixed id="countdown" border-variant="warning" class="charm">
             <template slot="header">
-                <div v-resize-text="{ratio: '1.2', minFontSize: '30px', maxFontSize: '65px', delay: '20'}">
-                <!--suppress CheckImageSize -->
-                <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" /> {{ $t("timer.date") }} <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" />
-                </div>
+                <b-container v-resize-text="{ratio: '1.2', minFontSize: '30px', maxFontSize: '65px', delay: '20'}">
+                    <b-row>
+                        <b-col>
+                            <!--suppress CheckImageSize -->
+                            <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" />
+                        </b-col>
+                        <b-col>
+                            <p>{{ $t("timer.day") }}</p>
+                            <p>{{ $t("timer.date") }}</p>
+                        </b-col>
+                        <b-col>
+                            <!--suppress CheckImageSize -->
+                            <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" />
+                        </b-col>
+                    </b-row>
+                </b-container>
             </template>
             <template slot="lead">
                 <br />
@@ -14,7 +26,7 @@
                         slot-scope="{ timeObj }">
                         <b-container>
                             <b-row id="countdown-progress">
-                                  <b-col class="border">
+                                  <b-col>
                                       <b-row>
                                           <b-col>
                                               <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.d} `}}</p>
@@ -23,7 +35,7 @@
                                       </b-row>
                                   </b-col>
                                   <b-col class="d-none d-md-inline-block"></b-col>
-                                  <b-col class="border">
+                                  <b-col>
                                       <b-row>
                                           <b-col>
                                               <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.h} `}}</p>
@@ -32,7 +44,7 @@
                                       </b-row>
                                   </b-col>
                                   <b-col class="d-none d-md-inline-block"></b-col>
-                                  <b-col class="border">
+                                  <b-col>
                                       <b-row>
                                           <b-col>
                                               <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.m} `}}</p>
@@ -41,7 +53,7 @@
                                       </b-row>
                                   </b-col>
                                   <b-col class="d-none d-md-inline-block"></b-col>
-                                  <b-col class="border">
+                                  <b-col>
                                       <b-row>
                                           <b-col>
                                               <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.s} `}}</p>
