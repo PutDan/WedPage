@@ -2,7 +2,7 @@
   <b-container fluid id="home">
     <parallax-image />
     <circular-names id="names"/>
-    <countdown-content data-aos="slide-down" id="countdown"/>
+    <countdown-content data-aos="fade-down" id="countdown"/>
     <right-sided-content data-aos="fade-right" id="right-side"/>
     <left-sided-content data-aos="fade-left" id="left-side"/>
     <about-content data-aos="fade-up" id="about"/>

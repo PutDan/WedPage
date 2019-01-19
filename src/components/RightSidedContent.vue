@@ -3,7 +3,7 @@
         <b-modal centered v-model="showMapsModal" id="mapsModal">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10468.359162702543!2d8.4200062!3d49.0088767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcec0ba59ed6771b5!2sKirche+St.+Bernhard!5e0!3m2!1sen!2sde!4v1546345635638" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>        </b-modal>
         <b-row>
-            <b-col class="border" id="content">
+            <b-col class="border border-warning" id="content">
                 <b-row>
                     <b-col class="d-none d-sm-inline-block" col cols="3">
                         <b-img alt="St. Bernhard" rounded="circle" thumbnail :src="require('../assets/church.jpg')"></b-img>
@@ -66,7 +66,7 @@
     }
 
     #content {
-        background-color: @woodbrown;
+        background-color: #C4C4C4;
         font-family: 'Lato', sans-serif;
         ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";       /* IE 8 */
         filter: alpha(opacity=90);  /* IE 5-7 */
@@ -93,5 +93,9 @@
     .material-icons {
         cursor: pointer;
         color: @linkedel;
+    }
+
+    #content {
+        color: @deepgreen;
     }
 </style>
