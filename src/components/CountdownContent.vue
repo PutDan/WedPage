@@ -75,7 +75,7 @@
                 </vac>
             </template>
             <hr class="my-4">
-            <b-btn variant="primary" to="/rsvp">{{ $t("timer.button.rsvp") }}</b-btn>
+            <b-btn class="my-button" variant="primary" to="/rsvp">{{ $t("timer.button.rsvp") }}</b-btn>
             <b-btn variant="success" href="#about">{{ $t("timer.button.learn_more") }}</b-btn>
         </b-jumbotron>
     </div>
@@ -129,5 +129,9 @@
         -moz-opacity: 0.9;          /* Netscape */
         -khtml-opacity: 0.9;        /* Safari 1.x */
         opacity: 0.9;
+    }
+
+    .my-button {
+        margin-right: 15px;
     }
 </style>

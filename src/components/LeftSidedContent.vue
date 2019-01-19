@@ -1,7 +1,7 @@
 <template>
     <b-container id="container">
         <b-modal centered v-model="showMapsModal" id="mapsModal">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10467.603032511342!2d8.426661!3d49.012473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9e5a1ff56ad8e19!2sHoepfner+Burghof+Brauereiausschank+-+Hotel!5e0!3m2!1sen!2sde!4v1546772890208" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10467.603032511342!2d8.426661!3d49.012473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9e5a1ff56ad8e19!2sHoepfner+Burghof+Brauereiausschank+-+Hotel!5e0!3m2!1sen!2sde!4v1546772890208" width="350" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </b-modal>
         <b-row>
             <b-col class="border border-warning" id="content">
@@ -9,7 +9,7 @@
                     <b-col>
                         <b-row>
                             <b-col>
-                                <h1 id="title" v-resize-text="{ratio: '0.8', minFontSize: '20px', maxFontSize: '49px', delay: '20'}">{{ $t("leftside.title" ) }}</h1>
+                                <h1 id="title" v-resize-text="{ratio: '0.8', minFontSize: '25px', maxFontSize: '55px', delay: '20'}">{{ $t("leftside.title" ) }}</h1>
                             </b-col>
                         </b-row>
                         <b-row>
@@ -36,7 +36,11 @@
                         </b-row>
                     </b-col>
                     <b-col class="d-none d-sm-inline-block" col cols="3">
-                        <b-img fluid alt="Höpfner Brewery" height="25px" rounded="circle" thumbnail :src="require('../assets/hoepfner.jpg')"></b-img>
+                        <parallax-container id="picture">
+                            <parallax-element  class="background-image" :parallaxStrength="2" :type="'depth'">
+                                <b-img fluid alt="Höpfner Brewery" height="25px" rounded="circle" thumbnail :src="require('../assets/hoepfner.jpg')"></b-img>
+                            </parallax-element>
+                        </parallax-container>
                     </b-col>
                 </b-row>
             </b-col>
@@ -56,14 +60,14 @@
 <style scoped lang="less">
     @import "../style/App.less";
     //noinspection CssUnknownTarget
-    @import (css) url('https://fonts.googleapis.com/css?family=Charm');
+    @import (css) url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise');
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=Lato');
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
     #title {
-        font-family: 'Charm', cursive;
+        font-family: 'Monsieur La Doulaise', cursive;
     }
 
     #content {

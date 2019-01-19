@@ -33,8 +33,11 @@ export default {
         date: '6. Juli, 2019, Zeit TBD',
     },
     about: {
-        title: 'Über uns',
         met: 'Wie wir uns kennengelernt haben',
+    },
+    met: {
+        title: 'How we Met',
+        description: '',
     },
     footer: {
         by: 'Designed und implementiert von den Besitzern',

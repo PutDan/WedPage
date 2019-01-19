@@ -33,8 +33,11 @@ export default {
         date: '6. Juli, 2019, Jam TBD',
     },
     about: {
-        met: 'How we Met',
         title: 'About Us',
+    },
+    met: {
+        title: 'How we Met',
+        description: '',
     },
     footer: {
         by: 'Owned, designed and implemented by',

@@ -34,7 +34,10 @@ export default {
     },
     about: {
         title: 'About Us',
-        met: 'How we Met',
+    },
+    met: {
+        title: 'How we Met',
+        description: '',
     },
     footer: {
         by: 'Owned, designed and implemented by',

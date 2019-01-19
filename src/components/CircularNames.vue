@@ -11,7 +11,7 @@
             </b-col>
         </b-row>
             <div id="button" class="center-con d-none d-md-flex">
-                <a v-scroll-to="'#countdown'">
+                <a href='#' v-scroll-to="'#countdown'">
                     <div class="round">
                         <span></span>
                         <span></span>

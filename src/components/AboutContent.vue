@@ -11,22 +11,20 @@
                 </b-col>
             </b-row>
             <br />
-            <b-row>
-                <b-col>
-                    <h1 id="title">{{ $t('about.met') }}</h1>
-                </b-col>
-            </b-row>
+            <how-we-met/>
         </b-container>
     </div>
 </template>
 <script>
     import PersonContent from './PersonContent';
+    import HowWeMet from "./HowWeMet";
+
     const name1 = 'putri';
     const name2 = 'daniel';
 
     export default {
         name: 'about-content',
-        components: {PersonContent},
+        components: {HowWeMet, PersonContent},
         data() {
             return {
                 name1,
@@ -50,11 +48,6 @@
         -khtml-opacity: 0.9;        /* Safari 1.x */
         opacity: 0.9;
         overflow: hidden;
-    }
-
-    #title {
-        font-family: 'Charm', cursive;
-        color: @richgold;
     }
 
 </style>
