@@ -13,8 +13,10 @@ import vueResizeText from 'vue-resize-text';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import VueMouseParallax from 'vue-mouse-parallax';
+import VueScrollTo from 'vue-scrollto';
 
 Vue.use(VueMouseParallax);
+Vue.use(VueScrollTo);
 
 Vue.use(Vuex);
 const store = new Vuex.Store({});

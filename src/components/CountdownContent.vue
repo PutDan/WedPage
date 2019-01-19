@@ -1,21 +1,28 @@
 <template>
     <div id="container">
-        <b-jumbotron fixed id="countdown" border-variant="warning" class="charm">
+        <a id="countdown"></a>
+        <b-jumbotron fixed id="countdown-content" border-variant="warning">
             <template slot="header">
-                <b-container v-resize-text="{ratio: '1.2', minFontSize: '30px', maxFontSize: '65px', delay: '20'}">
+                <b-container>
                     <b-row>
-                        <b-col>
+                        <b-col class="d-none d-md-inline-block">
                             <!--suppress CheckImageSize -->
                             <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" />
                         </b-col>
                         <b-col>
-                            <p>{{ $t("timer.day") }}</p>
-                            <p>{{ $t("timer.date") }}</p>
+                            <p class="written1" v-resize-text="{minFontSize: '65px', maxFontSize: '100px', delay: '20'}">{{ $t("timer.day") }}</p>
                         </b-col>
-                        <b-col>
+                        <b-col class="d-none d-md-inline-block">
                             <!--suppress CheckImageSize -->
                             <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" />
                         </b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="d-none d-md-inline-block"></b-col>
+                        <b-col>
+                            <p class="written2" v-resize-text="{minFontSize: '20px', maxFontSize: '55px', delay: '20'}">{{ $t("timer.date") }}</p>
+                        </b-col>
+                        <b-col class="d-none d-md-inline-block"></b-col>
                     </b-row>
                 </b-container>
             </template>
@@ -28,36 +35,36 @@
                             <b-row id="countdown-progress">
                                   <b-col>
                                       <b-row>
-                                          <b-col>
-                                              <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.d} `}}</p>
-                                              <p class="description"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.days") }}</p>
+                                          <b-col class="border">
+                                              <p class="time" v-resize-text="{minFontSize: '20px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.d} `}}</p>
+                                              <p class="description" v-resize-text="{minFontSize: '20px', maxFontSize: '65px', delay: '20'}">{{ $t("timer.days") }}</p>
                                           </b-col>
                                       </b-row>
                                   </b-col>
-                                  <b-col class="d-none d-md-inline-block"></b-col>
+                                  <b-col class="d-none d-md-inline-block"><p class="colon"><br />:</p></b-col>
                                   <b-col>
                                       <b-row>
-                                          <b-col>
-                                              <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.h} `}}</p>
-                                              <p class="description"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.hours") }}</p>
+                                          <b-col class="border">
+                                              <p class="time"  v-resize-text="{minFontSize: '20px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.h} `}}</p>
+                                              <p class="description"  v-resize-text="{minFontSize: '20px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.hours") }}</p>
                                           </b-col>
                                       </b-row>
                                   </b-col>
-                                  <b-col class="d-none d-md-inline-block"></b-col>
+                                  <b-col class="d-none d-md-inline-block"><p class="colon"><br />:</p></b-col>
                                   <b-col>
                                       <b-row>
-                                          <b-col>
-                                              <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.m} `}}</p>
-                                              <p class="description"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.minutes") }}</p>
+                                          <b-col class="border">
+                                              <p class="time"  v-resize-text="{minFontSize: '20px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.m} `}}</p>
+                                              <p class="description"  v-resize-text="{minFontSize: '20px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.minutes") }}</p>
                                           </b-col>
                                       </b-row>
                                   </b-col>
-                                  <b-col class="d-none d-md-inline-block"></b-col>
+                                  <b-col class="d-none d-md-inline-block"><p class="colon"><br />:</p></b-col>
                                   <b-col>
                                       <b-row>
-                                          <b-col>
-                                              <p class="time"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.s} `}}</p>
-                                              <p class="description"  v-resize-text="{ratio: '1.2', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.seconds") }}</p>
+                                          <b-col class="border">
+                                              <p class="time"  v-resize-text="{minFontSize: '20px', maxFontSize: '75px', delay: '20'}">{{` ${timeObj.s} `}}</p>
+                                              <p class="description"  v-resize-text="{minFontSize: '20px', maxFontSize: '75px', delay: '20'}">{{ $t("timer.seconds") }}</p>
                                           </b-col>
                                       </b-row>
                                   </b-col>
@@ -80,15 +87,23 @@
 </script>
 
 
+<!--suppress CssUnknownTarget -->
 <style scoped lang="less">
     @import "../style/App.less";
-    //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=Charm');
-    //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=Lato');
+    @import (css) url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise');
 
-    .charm {
+    .written1 {
+        font-family: 'Monsieur La Doulaise', cursive;
+    }
+
+    .written2 {
         font-family: 'Charm', cursive;
+    }
+
+    .colon {
+        color: white;
     }
 
     .my-4 {
@@ -107,7 +122,7 @@
         font-family: 'Lato', sans-serif;
     }
 
-    #countdown {
+    #countdown-content {
         background-color: @deepgreen;
         ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";       /* IE 8 */
         filter: alpha(opacity=90);  /* IE 5-7 */

@@ -6,7 +6,7 @@
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
                     <b-nav-item to="/home">{{ $t("link.home_link") }}</b-nav-item>
-                    <b-nav-item href="#about">{{ $t("link.about_link") }}</b-nav-item>
+                    <b-nav-item href="/home#about">{{ $t("link.about_link") }}</b-nav-item>
                     <b-nav-item to="/rsvp">{{ $t("link.rsvp_link") }}</b-nav-item>
                     <b-nav-item to="/photos" disabled>{{ $t("link.photos_link") }}</b-nav-item>
                 </b-navbar-nav>
