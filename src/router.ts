@@ -19,11 +19,6 @@ export default new Router({
             component: Home,
         },
         {
-            path: '/about',
-            name: 'about',
-            component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
-        },
-        {
             path: '/RSVP',
             name: 'RSVP',
             component: () => import(/* webpackChunkName: "rsvp" */ './views/RSVP.vue'),

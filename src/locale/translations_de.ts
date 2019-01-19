@@ -33,11 +33,32 @@ export default {
         date: '6. Juli, 2019, Zeit TBD',
     },
     about: {
-        met: 'Wie wir uns kennengelernt haben',
+        title: 'Über uns',
     },
     met: {
-        title: 'How we Met',
-        description: '',
+        title: 'Wie wir uns kennengelernt haben',
+        description1: 'Putri und Daniel haben sich im Wintersemester 2014/15 am Karlsruher Institut für Technologie, ' +
+            'ihrer damalige Universität, im Orchester kennengelernt. Daniel spielt klassisches Schlagzeug und ' +
+            'Putri spielt Geige. Obwohl sie während des Semesters jeden Montag zusammen Orchesterprobe hatten, ' +
+            'dauerte es bis zum jährlichen Probenwochenende, dass sie sich wirklich gegenseitig vorstellten. Mit ' +
+            'Beginn des neuen Semesters hatten sie beide zufällig die gleiche Physik-Vorlesung gewählt und ' +
+            'verbrachten dort, und in anderen Informatik-Vorlesungen immer mehr Zeit miteinander.',
+        description2: 'Nach ein paar Wochen des gemeinsamen Vorlesungsbesuchens, sowie der gemeinsamen Proben, fasste' +
+            'Daniel sich endlich ein Herz und lad Putri auf ein Date ein. Wie das so ist, verliebten die beiden sich' +
+            'schnell und wurden am 29. Mai 2015 ein Paar. In der gleichen Woche stellte Daniel seine neue Freundin ' +
+            'seiner Familie und Freunden beim alljährlichen "Strohhutfest" in seinem Heimatort Frankenthal das erste ' +
+            'Mal vor. Ihre Beziehung verlief von Anfang an gut, und schnell verbrachten Putri und Daniel mehr Zeit ' +
+            'zusammen als getrennt. Als Paar, verbrachten sie ihre Zeit oft mit Reisen in die ganze Welt, und ' +
+            'spielen immer noch im Orchester des KITs mit. 3 Jahre später machte Daniel Putri an einem wunderschönen ' +
+            'See auf Vulkanfelsen, am Fuße des Mt. Fuji, den sie 2 Tage davor erklommen hatten, einen Heiratsantrag. ' +
+            'Putri nahm den Antrag an und sie beides freuen sich darauf dieses Jahr endlich zu heiraten und den Rest ' +
+            'ihres Lebens miteinander zu verbringen.',
+        oldImg: 'Wir 2015',
+        newImg: 'Wir 2019 direkt nach dem Heiratsantrag',
+        readMore: 'Mehr erfahren',
+        imgRow1: 'Wir 2016 in Rom',
+        imgRow2: 'Wir 2017 beim Fischen im Atlantik',
+        imgRow3: 'Wir 2018 in Indonesien mit Putri\'s Bruder',
     },
     footer: {
         by: 'Designed und implementiert von den Besitzern',

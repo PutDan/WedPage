@@ -1,12 +1,12 @@
 <template>
-    <b-container id="container" fluid>
+    <b-container id="container" fixed>
         <b-row>
             <b-col>
                 <b-col><h1 id="title">{{ $t('person.' + name + '.title') }}</h1></b-col>
                 <parallax-container id="avatar">
                     <parallax-element  class="background-image" :parallaxStrength="2" :type="'depth'">
-                        <b-img v-if="name === 'putri'" thumbnail rounded="circle" fluid  :src="require('../assets/putri.png')"></b-img>
-                        <b-img v-else="name === 'putri'" thumbnail rounded="circle" fluid  :src="require('../assets/daniel.png')"></b-img>
+                        <b-img v-if="name === 'putri'" thumbnail rounded="circle" height="100x" :src="require('../assets/putri.png')"></b-img>
+                        <b-img v-else="name === 'putri'" thumbnail rounded="circle"  :src="require('../assets/daniel.png')"></b-img>
                     </parallax-element>
                 </parallax-container>
             </b-col>

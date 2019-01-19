@@ -1,6 +1,6 @@
 <template>
-    <div id="container">
-        <b-container fixed id="about-content" class="rounded border border-warning">
+    <div id="about-container">
+        <b-container fluid id="about-content" class="rounded border border-warning">
             <a id="about"></a>
             <b-row class="border-bottom">
                 <b-col class="border-right">
@@ -17,7 +17,7 @@
 </template>
 <script>
     import PersonContent from './PersonContent';
-    import HowWeMet from "./HowWeMet";
+    import HowWeMet from './HowWeMet';
 
     const name1 = 'putri';
     const name2 = 'daniel';
