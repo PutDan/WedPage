@@ -62,9 +62,9 @@
         data() {
             return {
                 showCollapse: false,
-            }
-        }
-    }
+            };
+        },
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

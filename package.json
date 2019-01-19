@@ -1,11 +1,12 @@
 {
-  "name": "untitled",
+  "name": "wedpage",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "aws s3 sync ./dist s3://wedpage"
   },
   "dependencies": {
     "@babel/core": "7.0.0-beta.47",
