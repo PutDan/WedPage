@@ -18,3 +18,5 @@ yarn-debug.log*
 *.njsproj
 *.sln
 **.DS_Store
+**.js.map
+src/**/*.js
