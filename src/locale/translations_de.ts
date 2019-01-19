@@ -56,6 +56,7 @@ export default {
         oldImg: 'Wir 2015',
         newImg: 'Wir 2019 direkt nach dem Heiratsantrag',
         readMore: 'Mehr erfahren',
+        readLess: 'Weniger zeigen',
         imgRow1: 'Wir 2016 in Rom',
         imgRow2: 'Wir 2017 beim Fischen im Atlantik',
         imgRow3: 'Wir 2018 in Indonesien mit Putri\'s Bruder',

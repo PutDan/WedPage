@@ -57,6 +57,7 @@ export default {
         oldImg: 'Us in 2015',
         newImg: 'Us in 2019 right after the proposal',
         readMore: 'Read More',
+        readLess: 'Read Less',
         imgRow1: 'Us in 2016 in Rome',
         imgRow2: 'Us in 2017 fishing in the Atlantic',
         imgRow3: 'Us in 2018 in Indonesia with Putri\'s Brother',

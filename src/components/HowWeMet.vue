@@ -14,8 +14,11 @@
                     <b-col>{{ $t('met.oldImg') }}</b-col>
                 </div>
                 <p>{{ $t('met.description1') }}</p>
-                <b-btn v-b-toggle.collapse1 variant="primary">{{ $t('met.readMore') }}</b-btn>
-                <b-collapse id="collapse1" class="mt-2">
+                <b-btn @click="showCollapse = true"
+                       :class="showCollapse ? 'collapsed' : null"
+                       aria-controls="collapse1"
+                       :aria-expanded="showCollapse ? 'true' : 'false'" v-if="!showCollapse" variant="primary">{{ $t('met.readMore') }}</b-btn>
+                <b-collapse id="collapse1" v-model="showCollapse" class="mt-2">
                     <div id="img-new">
                         <b-img  alt="Us in 2019" thumbnail width="350px" :src="require('../assets/2019.jpg')"></b-img>
                         <p>{{ $t('met.newImg') }}</p>
@@ -25,7 +28,7 @@
                         <b-row>
                             <b-col>
                                 <b-col>
-                                    <b-img  alt="Us in 2016 in Rome" thumbnail fluid rounded="circle" height="150px" width="350px" :src="require('../assets/imgRow2.jpg')"></b-img>
+                                    <b-img alt="Us in 2016 in Rome" thumbnail fluid rounded="circle" height="150px" width="350px" :src="require('../assets/imgRow2.jpg')"></b-img>
                                 </b-col>
                                 <b-col>{{ $t('met.imgRow1') }}</b-col>
                             </b-col>
@@ -43,6 +46,10 @@
                             </b-col>
                         </b-row>
                     </div>
+                    <b-btn @click="showCollapse = false"
+                           :class="showCollapse ? 'collapsed' : null"
+                           aria-controls="collapse1"
+                           :aria-expanded="showCollapse ? 'true' : 'false'" v-if="showCollapse" variant="primary">{{ $t('met.readLess') }}</b-btn>
                 </b-collapse>
 
             </b-col>
@@ -51,7 +58,12 @@
 </template>
 <script>
     export default {
-        name: 'how-we-met'
+        name: 'how-we-met',
+        data() {
+            return {
+                showCollapse: false,
+            }
+        }
     }
 </script>
 <style scoped lang="less">
