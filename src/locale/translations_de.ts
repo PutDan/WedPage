@@ -97,4 +97,12 @@ export default {
             born: '29. März, 1991 in Jakarta, Indonesien',
         },
     },
+    rsvp: {
+        title: 'Hi! Wir würden uns über deine Anwesenheit bei unserer Hochzeit unendlich freuen!',
+        codeDescription: 'Trage bitte zunächst den Zugangscode von deiner Einladung ein:',
+        wrongCode: 'Du hast leider den falschen Zugangscode eingegeben, schau nochmal auf deiner Einladung nach, ' +
+            'oder kontaktiere uns.',
+        attending: 'Ja, ich komme zur Hochzeit',
+        partner: 'Ja, ich bringe jemanden mit',
+    },
 };

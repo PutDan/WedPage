@@ -20,3 +20,4 @@ yarn-debug.log*
 **.DS_Store
 **.js.map
 src/**/*.js
+src/config/config.ts

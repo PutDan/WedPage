@@ -28,6 +28,7 @@
     "vue-parallaxy": "^1.1.1",
     "vue-property-decorator": "^7.0.0",
     "vue-resize-text": "^0.1.0",
+    "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1",
     "vue-scrollto": "^2.13.0",
     "vuex": "^3.0.1",

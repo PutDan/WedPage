@@ -40,7 +40,7 @@
                             </b-col>
                             <b-col class="d-none d-sm-inline-block">
                                 <b-col>
-                                    <b-img  alt="Us in 2018 in Indonesia with Putri's Brother" thumbnail rounded="circle"  height="150px" width="350px" fluid :src="require('../assets/imgRow3.jpg')"></b-img>
+                                    <b-img alt="Us in 2018 in Indonesia with Putri's Brother" thumbnail rounded="circle"  height="150px" width="350px" fluid :src="require('../assets/imgRow3.jpg')"></b-img>
                                 </b-col>
                                 <b-col>{{ $t('met.imgRow3') }}</b-col>
                             </b-col>

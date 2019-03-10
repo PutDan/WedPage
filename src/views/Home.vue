@@ -20,8 +20,7 @@
     #names {
       float: top;
       position: absolute;
-      top: 200px;
-      left: -8%;
+      top: 60px;
       right: 0;
       bottom: 0;
       text-align: center;

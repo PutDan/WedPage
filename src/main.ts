@@ -26,6 +26,10 @@ import translationsEn from './locale/translations_en';
 import translationsDe from './locale/translations_de';
 import translationsIn from './locale/translations_in';
 
+import VueResource from 'vue-resource';
+
+Vue.use(VueResource);
+
 Vue.i18n.add('en', translationsEn);
 Vue.i18n.add('de', translationsDe);
 Vue.i18n.add('in', translationsIn);

@@ -1,5 +1,6 @@
 <template>
-    <b-container>
+    <b-container fluid>
+        <b-img thumbnail id="header" alt="Header" :src="require('../assets/header.png')"></b-img>
         <b-row>
             <b-col>
                 <h1 id="circularNames" class="circular" v-resize-text="{ratio: '1.0', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">Daniel & Putri</h1>
@@ -10,16 +11,16 @@
                 <h1 id="circularText" class="circular" v-resize-text="{ratio: '1.0', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{ $t("circular.headline") }}</h1>
             </b-col>
         </b-row>
-            <div id="button" class="center-con d-none d-md-flex">
-                <a href='#' v-scroll-to="'#countdown'">
-                    <div class="round">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </a>
-            </div>
+        <div id="button" class="center-con d-none d-md-flex">
+            <a href='#' v-scroll-to="'#countdown'">
+                <div class="round">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
     </b-container>
 
 </template>
