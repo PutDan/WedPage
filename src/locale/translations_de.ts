@@ -76,11 +76,12 @@ export default {
         iconslicense: 'sind lizenziert durch',
         images: {
             attribution: {
-                title: "Bild Urheberschutz:",
-                church: "Bild der Kirche, St. Bernhard, von",
-                churchattribution: "Attributiert zu: Meph66",
-                brewery: "Bild der Brauerei, Höpfner, von",
-                breweryattribution: "Attributiert zu: Kein maschinen-lesbarer Name gefunden. Annahme: Dumontcedric (laut Urheberschutz Antrag).",
+                title: 'Bild Urheberschutz:',
+                church: 'Bild der Kirche, St. Bernhard, von',
+                churchattribution: 'Attributiert zu: Meph66',
+                brewery: 'Bild der Brauerei, Höpfner, von',
+                breweryattribution: 'Attributiert zu: Kein maschinen-lesbarer Name gefunden. ' +
+                    'Annahme: Dumontcedric (laut Urheberschutz Antrag).',
             },
         },
     },

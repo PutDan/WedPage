@@ -77,11 +77,12 @@ export default {
         iconslicense: 'are licensed by',
         images: {
             attribution: {
-                title: "Image attributions:",
-                church: "Image of the church, St. Bernhard, taken from",
-                churchattribution: "Attributed to: Meph66",
-                brewery: "Image of the brewery, Höpfner, taken from",
-                breweryattribution: "Attributed to: No machine-readable author provided. Dumontcedric assumed (based on copyright claims).",
+                title: 'Image attributions:',
+                church: 'Image of the church, St. Bernhard, taken from',
+                churchattribution: 'Attributed to: Meph66',
+                brewery: 'Image of the brewery, Höpfner, taken from',
+                breweryattribution: 'Attributed to: No machine-readable author provided. ' +
+                    'Dumontcedric assumed (based on copyright claims).',
             },
         },
     },

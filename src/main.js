@@ -24,13 +24,12 @@ import translationsIn from './locale/translations_in';
 Vue.i18n.add('en', translationsEn);
 Vue.i18n.add('de', translationsDe);
 Vue.i18n.add('in', translationsIn);
-let language = window.navigator.language;
-console.log(language);
+const initialLanguage = window.navigator.language;
 // set the start locale to use
-if (language.startsWith("de")) {
+if (initialLanguage.startsWith('de')) {
     Vue.i18n.set('de');
 }
-else if (language.startsWith("ind")) {
+else if (initialLanguage.startsWith('id')) {
     Vue.i18n.set('in');
 }
 else {
