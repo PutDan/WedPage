@@ -30,8 +30,18 @@ Vue.i18n.add('en', translationsEn);
 Vue.i18n.add('de', translationsDe);
 Vue.i18n.add('in', translationsIn);
 
+let language = window.navigator.language;
+
+console.log(language);
+
 // set the start locale to use
-Vue.i18n.set('en');
+if (language.startsWith("de")) {
+    Vue.i18n.set('de');
+} else if (language.startsWith("ind")) {
+    Vue.i18n.set('in');
+} else {
+    Vue.i18n.set('en');
+}
 
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);

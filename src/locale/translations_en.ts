@@ -54,13 +54,13 @@ export default {
             'Kawaguchiko in Japan, two days after climbing the close-by Mt. Fuji all the way to the top. ' +
             'Putri accepted, and they are both very excited to finally get married this year and spend the rest of ' +
             'their life together.',
-        oldImg: 'Us in 2015',
-        newImg: 'Us in 2019 right after the proposal',
+        oldImg: '2015, Muscat, Oman',
+        newImg: '2019, right after the proposal, Fujikawaguchiko, Japan',
         readMore: 'Read More',
         readLess: 'Read Less',
-        imgRow1: 'Us in 2016 in Rome',
-        imgRow2: 'Us in 2017 fishing in the Atlantic',
-        imgRow3: 'Us in 2018 in Indonesia with Putri\'s Brother',
+        imgRow1: '2017, Atlantic, Virginia, USA',
+        imgRow2: '2016, Rome, Italy',
+        imgRow3: '2018, Jakarta, Indonesia with Putri\'s Brother',
     },
     footer: {
         by: 'Owned, designed and implemented by',
@@ -75,6 +75,15 @@ export default {
         icons: 'Icons made by',
         iconsfrom: 'from',
         iconslicense: 'are licensed by',
+        images: {
+            attribution: {
+                title: "Image attributions:",
+                church: "Image of the church, St. Bernhard, taken from",
+                churchattribution: "Attributed to: Meph66",
+                brewery: "Image of the brewery, Höpfner, taken from",
+                breweryattribution: "Attributed to: No machine-readable author provided. Dumontcedric assumed (based on copyright claims).",
+            },
+        },
     },
     person: {
         daniel: {

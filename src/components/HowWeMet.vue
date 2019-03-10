@@ -28,13 +28,13 @@
                         <b-row>
                             <b-col>
                                 <b-col>
-                                    <b-img alt="Us in 2016 in Rome" thumbnail fluid rounded="circle" height="150px" width="350px" :src="require('../assets/imgRow2.jpg')"></b-img>
+                                    <b-img alt="Us in 2017 fishing in the Atlantic" thumbnail fluid rounded="circle" height="150px" width="350px" :src="require('../assets/imgRow2.jpg')"></b-img>
                                 </b-col>
                                 <b-col>{{ $t('met.imgRow1') }}</b-col>
                             </b-col>
                             <b-col class="d-none d-md-inline-block">
                                 <b-col>
-                                    <b-img  alt="Us in 2017 fishing in the Atlantic" thumbnail fluid rounded="circle" height="150px" width="150px" :src="require('../assets/imgRow1.jpg')"></b-img>
+                                    <b-img  alt="Us in 2016 in Rome" thumbnail fluid rounded="circle" height="150px" width="150px" :src="require('../assets/imgRow1.jpg')"></b-img>
                                 </b-col>
                                 <b-col>{{ $t('met.imgRow2') }}</b-col>
                             </b-col>

@@ -1,9 +1,12 @@
 <template>
     <div id="app">
-        <custom-navbar id="navbar" :active-de="activeDe" :active-en="activeEn" :active-in="activeIn" :icon-de="iconDe"
-                      :icon-en="iconEn" :icon-in="iconIn" :select-language="selectLanguage"/>
-        <router-view/>
-        <custom-footer id="footer"/>
+        <div class="content">
+            <custom-navbar id="navbar" :active-de="activeDe" :active-en="activeEn" :active-in="activeIn" :icon-de="iconDe"
+                          :icon-en="iconEn" :icon-in="iconIn" :select-language="selectLanguage"/>
+            <router-view/>
+            <div class="push"></div>
+        </div>
+        <custom-footer class="footer"/>
     </div>
 </template>
 
@@ -66,4 +69,12 @@
         text-align: center;
         color: @richgold;
     }
+
+    .content {
+        min-height: calc(100vh - 120px);
+    }
+    .footer {
+        height: 100px;
+    }
+
 </style>

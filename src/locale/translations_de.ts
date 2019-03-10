@@ -53,13 +53,13 @@ export default {
             'See auf Vulkanfelsen, am Fuße des Mt. Fuji, den sie 2 Tage davor erklommen hatten, einen Heiratsantrag. ' +
             'Putri nahm den Antrag an und sie beides freuen sich darauf dieses Jahr endlich zu heiraten und den Rest ' +
             'ihres Lebens miteinander zu verbringen.',
-        oldImg: 'Wir 2015',
-        newImg: 'Wir 2019 direkt nach dem Heiratsantrag',
-        readMore: 'Mehr erfahren',
-        readLess: 'Weniger zeigen',
-        imgRow1: 'Wir 2016 in Rom',
-        imgRow2: 'Wir 2017 beim Fischen im Atlantik',
-        imgRow3: 'Wir 2018 in Indonesien mit Putri\'s Bruder',
+        oldImg: '2015 Muskat, Oman',
+        newImg: '2019, direkt nach dem Antrag, Fujikawaguchiko, Japan',
+        readMore: 'Read More',
+        readLess: 'Read Less',
+        imgRow1: '2017, Atlantik, Virginia, USA',
+        imgRow2: '2016, Rom, Italien',
+        imgRow3: '2018, Jakarta, Indonesien mit Putri\'s Bruder',
     },
     footer: {
         by: 'Designed und implementiert von den Besitzern',
@@ -74,6 +74,15 @@ export default {
         icons: 'Icons erstellt von',
         iconsfrom: 'von',
         iconslicense: 'sind lizenziert durch',
+        images: {
+            attribution: {
+                title: "Bild Urheberschutz:",
+                church: "Bild der Kirche, St. Bernhard, von",
+                churchattribution: "Attributiert zu: Meph66",
+                brewery: "Bild der Brauerei, Höpfner, von",
+                breweryattribution: "Attributiert zu: Kein maschinen-lesbarer Name gefunden. Annahme: Dumontcedric (laut Urheberschutz Antrag).",
+            },
+        },
     },
     person: {
         daniel: {

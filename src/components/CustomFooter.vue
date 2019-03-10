@@ -1,5 +1,5 @@
 <template>
-    <div id="footer">
+    <footer id="footer">
         <hr id="divider">
         <p>
             {{ $t("footer.by" )}} <a href="https://github.com/Germandrummer92">@Germandrummer92</a> {{ $t("footer.and") }}
@@ -7,7 +7,7 @@
         <p>
             <router-link tag="a" class-active="active" to="/copyright" exact> © 2018-2019 {{ $t("footer.copyright_link")}}</router-link>
         </p>
-    </div>
+    </footer>
 </template>
 <script>
     export default {
