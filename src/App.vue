@@ -67,7 +67,7 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: @greenfont;
+        color: @fontcolor;
     }
 
     .content {

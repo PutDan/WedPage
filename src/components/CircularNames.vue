@@ -1,42 +1,37 @@
 <template>
-    <b-container fluid>
-        <b-img thumbnail id="header" alt="Header" :src="require('../assets/header.png')"></b-img>
+    <b-container>
+        <b-row id="first-row">
+            <b-col>
+                <p class="text" v-resize-text="{ratio: '1.0', minFontSize: '10px', maxFontSize: '20px', delay: '20'}">{{ $t("circular.invitation") }}</p>
+            </b-col>
+        </b-row>
+            <b-row>
+                <b-col>
+                    <p id="large-names" class="text" v-resize-text="{ratio: '1.0', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">Daniel & Patricia</p>
+                </b-col>
+            </b-row>
         <b-row>
             <b-col>
-                <h1 id="circularNames" class="circular" v-resize-text="{ratio: '1.0', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">Daniel & Putri</h1>
+                <p class="text" v-resize-text="{ratio: '1.0', minFontSize: '10px', maxFontSize: '20px', delay: '20'}">{{ $t("circular.invitation2") }}</p>
+                <p class="text" v-resize-text="{ratio: '1.0', minFontSize: '10px', maxFontSize: '20px', delay: '20'}">{{ $t("circular.invitation3") }}</p>
             </b-col>
         </b-row>
         <b-row>
             <b-col>
-                <h1 id="circularText" class="circular" v-resize-text="{ratio: '1.0', minFontSize: '15px', maxFontSize: '75px', delay: '20'}">{{ $t("circular.headline") }}</h1>
+                <hr id="vertical-divider">
             </b-col>
         </b-row>
-        <div id="button" class="center-con d-none d-md-flex">
-            <a href='#' v-scroll-to="'#countdown'">
-                <div class="round">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </a>
-        </div>
+        <b-row>
+            <b-col>
+                <p id="date" class="text" v-resize-text="{ratio: '1.0', minFontSize: '12px', maxFontSize: '45px', delay: '20'}">{{ $t("circular.date") }}</p>
+            </b-col>
+        </b-row>
     </b-container>
-
 </template>
 <script>
-    import CircleType from 'circletype';
     import ResizeText from 'vue-resize-text';
-    let circleTypeNames = null;
     export default {
         name: 'circular-names',
-        mounted() {
-            circleTypeNames = new CircleType(document.getElementById('circularNames'));
-            circleTypeNames.radius(250).dir(1);
-        },
-        updated() {
-            circleTypeNames.refresh();
-        },
         directives: {
             ResizeText,
         },
@@ -45,85 +40,37 @@
 <style scoped lang="less">
     @import "../style/App.less";
     //noinspection CssUnknownTarget
-    @import (css) url('https://fonts.googleapis.com/css?family=Charm');
-    .circular {
-        color: @greenfont;
-        font-family: 'Charm', cursive;
-        font-size: 65px;
+    @import (css) url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+    //noinspection CssUnknownTarget
+    @import (css) url('https://fonts.googleapis.com/css?family=EB+Garamond');
+    #first-row {
+        margin-top: 100px;
     }
-    #circularText {
-        margin-top: 170px;
+    #large-names {
+        font-family: 'EB Garamond', sans-serif;
+        letter-spacing: 8px;
     }
-    .center-con {
-        display: flex;
-        height: 25vh;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
+    #date {
+        font-family: 'EB Garamond', sans-serif;
+        letter-spacing: 8px;
     }
-
-    .round {
-        position: relative;
-        border: 3px solid #fff;
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
+    .text {
+        letter-spacing: 5px;
+        color: @fontcolor;
+        font-family: 'Josefin Sans', sans-serif;
     }
 
-    span {
-        z-index: 999;
-        height: 3px;
-        margin:1px;
-        width: 30px;
-        background: #fff;
-        transition: 0.4s ease;
+    .container {
+        background-color: white;
+        max-width: 750px;
     }
 
-    span:first-child {
-        display: block;
-        position: absolute;
-        transform: rotate(45deg);
-        left: 25%;
-        bottom: 35%;
-    }
-
-    span:nth-child(2) {
-        display: block;
-        position: absolute;
-        transform: rotate(-45deg);
-        left: 45%;
-        bottom: 35%;
-    }
-
-    span:nth-child(3) {
-        display: block;
-        position: absolute;
-        transform: rotate(45deg);
-        left: 25%;
-        bottom: 54%;
-    }
-
-    span:nth-child(4) {
-        display: block;
-        position: absolute;
-        transform: rotate(-45deg);
-        left: 45%;
-        bottom: 54%;
-    }
-
-    .round:hover span:nth-child(1) {
-        transform: rotate(-135deg);
-    }
-
-    .round:hover span:nth-child(2) {
-        transform: rotate(135deg);
-    }
-
-    .round:hover span:nth-child(3) {
-        transform: rotate(225deg);
-    }
-
-    .round:hover span:nth-child(4) {
-        transform: rotate(-225deg);
+    #vertical-divider {
+        border-top-width: 0;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-color: @fontcolor;
+        height: 80px;
+        margin-right: 50%;
     }
 </style>

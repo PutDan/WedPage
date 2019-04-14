@@ -107,7 +107,7 @@
     }
 
     .my-4 {
-        background-color: @greenfont;
+        background-color: @fontcolor;
     }
 
     .time {

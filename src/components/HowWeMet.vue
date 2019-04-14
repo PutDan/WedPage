@@ -73,11 +73,11 @@
 
     #title {
         font-family: 'Charm', cursive;
-        color: @greenfont;
+        color: @fontcolor;
     }
 
     * {
-        color: @greenfont;
+        color: @fontcolor;
     }
 
     #img-old {

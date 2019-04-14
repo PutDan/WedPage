@@ -27,7 +27,7 @@
     }
 
     #divider {
-        background-color: @greenfont;
+        background-color: @fontcolor;
         padding-bottom: 2px;
     }
 

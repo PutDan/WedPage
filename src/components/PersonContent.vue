@@ -36,7 +36,7 @@
 
 
     #container {
-        color: @greenfont;
+        color: @fontcolor;
     }
     #text-content {
         text-align: right;

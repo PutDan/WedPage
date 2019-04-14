@@ -68,7 +68,7 @@
     @import "../style/App.less";
 
     #divider {
-        background-color: @greenfont;
+        background-color: @fontcolor;
         margin-top: 0;
         padding-bottom: 2px;
     }

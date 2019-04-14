@@ -7,7 +7,10 @@ export default {
         languages: 'Sprachen',
     },
     circular: {
-        headline: 'heiraten dieses Jahr',
+        invitation2: 'herzlich zu ihrer',
+        invitation3: 'Hochzeitsfeier ein.',
+        invitation: 'Zusammen mit ihren Familien laden DICH',
+        date: '6th of July 2019',
     },
     timer: {
         day: 'Samstag,',

@@ -101,6 +101,6 @@
     }
 
     #content {
-        color: @greenfont;
+        color: @fontcolor;
     }
 </style>

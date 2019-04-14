@@ -7,7 +7,10 @@ export default {
         languages: 'Languages',
     },
     circular: {
-        headline: 'are getting married',
+        invitation2: 'joyfully invite you to their',
+        invitation3: 'wedding celebration.',
+        invitation: 'Together with their families',
+        date: '6th of July 2019',
     },
     timer: {
         day: 'Saturday,',

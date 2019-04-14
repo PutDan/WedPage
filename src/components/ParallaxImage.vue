@@ -1,6 +1,6 @@
 <template>
     <parallax fixed>
-        <img src="../assets/slide1.jpg" alt="Daniel and Putri are getting married">
+        <img src="../assets/background-leaves.png" alt="Daniel and Putri are getting married">
     </parallax>
 </template>
 
@@ -15,10 +15,6 @@
 
 <style scoped lang="less">
     img {
-        ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";       /* IE 8 */
-        filter: alpha(opacity=60);  /* IE 5-7 */
-        -moz-opacity: 0.6;          /* Netscape */
-        -khtml-opacity: 0.6;        /* Safari 1.x */
-        opacity: 0.6;
+        background-repeat: round;
     }
 </style>
