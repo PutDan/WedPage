@@ -104,7 +104,7 @@ export default {
         },
     },
     rsvp: {
-        title: 'Hi! We would be delighted to have you attend our wedding!',
+        title: 'We would be delighted to have you attend our wedding!',
         codeDescription: 'Please first enter the access code for the rsvp form:',
         wrongCode: 'You entered the wrong access code, please double check on your invitation, or contact us',
         attending: 'Yes, I am attending',

@@ -1,22 +1,21 @@
 <template>
-    <div class='RSVP'>
-        <h1>RSVP</h1>
-
-        <b-container class="border border-warning" id="rsvp-container">
+    <b-container id="rsvp-container">
+        <parallax-image />
+        <b-container id="rsvp-content">
             <b-row>
-                <b-col><b>{{ $t("rsvp.title") }}</b></b-col>
+                <b-col>
+                    <h1 id="headline">RSVP</h1>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col id="rsvp-title"><b>{{ $t("rsvp.title") }}</b></b-col>
             </b-row>
             <b-row>
                 <b-col></b-col>
             </b-row>
             <b-row>
                 <b-col>
-                    <codeComponent :access="access" :form="form"/>
-                </b-col>
-            </b-row>
-            <b-row>
-                <b-col>
-                    <b-container id="rsvp-form" v-show="access">
+                    <b-container id="rsvp-form">
                         <b-form>
                             <b-form-group id="emailInputGroup"
                                           label="Email address:"
@@ -42,7 +41,7 @@
                             <b-form-checkbox v-model="form.attending" name="attending">{{ $t("rsvp.attending") }}</b-form-checkbox>
                         </b-form>
                         <br />
-                        <b-container id="attending-subform" class="border border-warning" v-show="form.attending">
+                        <b-container id="attending-subform" class="border" v-show="form.attending">
                             <b-form>
                                 <b-form-group id="attendingGroup"
                                               label="Food options"
@@ -75,22 +74,20 @@
                 </b-col>
             </b-row>
         </b-container>
-    </div>
+    </b-container>
 </template>
 
 <script>
     import { config } from '../config/config';
-    import CodeComponent from './CodeComponent';
+    import ParallaxImage from '../components/ParallaxImage';
 
     export default {
-        components: {CodeComponent},
         data() {
             return {
                 form: {
                     email: '',
                     name: '',
                     food: null,
-                    accessCode: '',
                     attending: false,
                     partner: false,
                     partnerFood: null,
@@ -101,36 +98,41 @@
                 ],
             };
         },
-        computed: {
-            access() {
-                return this.form.accessCode === config.rsvp.password;
-            },
+        components: {
+            ParallaxImage,
         },
         methods: {
             onSubmit(evt) {
                 evt.preventDefault();
                 const attending = this.form.attending ? 'Yes,++I\'ll+be+there' : 'Sorry,+can\'t+make+it';
                 const partnerAttending = this.form.partner ? 'Yes' : 'No';
-                const draftResponse = [[[null, 303985374, [this.form.name], 0], [null, 405606947,
-                    [this.form.accessCode], 0], [null, 877086558, [attending], 0],
-                    [null, 1498135098, [partnerAttending], 0]], null, '1254275035300148928', null, null,
-                    null, this.form.email, 1];
+                // const draftResponse = [[[null, 303985374, [this.form.name], 0], [null, 877086558,
+                //     [attending], 0]], null, '1254275035300148928', [null, 877086558, [attending], 0],
+                //     [null, 1498135098, [partnerAttending], 0]], null, ', null, null,
+                //     null, this.form.email, 1];
                 const formData = {
                     'emailAddress': this.form.email,
-                    'entry.179412295': this.form.food,
+                    'draftResponse': [],
+                    'fvv': 1,
+                    'pageHistory': 0,
+                    'fbzx': '1254275035300148928',
                     'emailReceipt': true,
-                    'draftResponse': draftResponse,
                 };
-                if (this.form.partner) {
-                    formData['entry.16473759'] = this.form.partnerFood;
-                }
+
+                const headers = {'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'};
 
                 alert(JSON.stringify(formData));
-
-                this.$http.post(config.rsvp.formsURL, formData)
-                    .then((response) => {
-                        console.log(response);
+                alert(config.rsvp.formsURL);
+                try {
+                    this.$http.post(config.rsvp.formsURL, formData, headers)
+                        .then((response) => {
+                            console.log(response);
+                        }).catch((error) => {
+                            console.log(error);
                     });
+                } catch (e) {
+                    console.log(e);
+                }
             },
             onReset(evt) {
                 evt.preventDefault();
@@ -154,22 +156,31 @@
 <style scoped lang="less">
     @import "../style/App.less";
 
-    .RSVP {
-        background-color: @background-color !important;
+    .Masthead {
+        height: 0 !important;
+        min-height: 0 !important;
     }
 
     #rsvp-container {
-        text-align: center;
-        background-color: @woodbrown;
-
+        background-color: @background-color-components;
+        max-width: 750px;
     }
 
-    #rsvp-form {
-        display: inline-block;
+    #rsvp-content {
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    #rsvp-title {
+        margin-bottom: 25px;
+    }
+
+    #headline {
+        margin-bottom: 50px;
     }
 
     #attending-subform {
-        background-color: @flowerred;
+        background-color: @alternative-background-color-components;
         text-align: left;
     }
 

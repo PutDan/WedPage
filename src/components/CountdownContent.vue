@@ -57,7 +57,7 @@
                     </vac>
                 </b-container>
             <hr class="my-4">
-            <custom-button :linkTo="'/rsvp'" :text-translation-id="'timer.button.rsvp'" />
+            <custom-button :target="'https://docs.google.com/forms/d/e/1FAIpQLScv3t1Ugo3j7wURajMSGrt_NfEE8udQuTICwU8gs9Iwqmo-Gw/formResponse'" :text-translation-id="'timer.button.rsvp'" />
             <custom-button :target="'#'" :scroll-to="'#about'" :text-translation-id="'timer.button.learn_more'" />
         </b-container>
     </div>
