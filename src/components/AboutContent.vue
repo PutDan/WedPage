@@ -1,5 +1,5 @@
 <template>
-    <div id="about-container">
+    <div class="my-container-fluid" id="about-container">
         <b-container fluid id="about-content">
             <a id="about"></a>
             <b-row id="first-row">
@@ -49,7 +49,6 @@
     @import "../style/App.less";
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=EB+Garamond');
-
     #first-row {
         margin-top: 100px;
     }
@@ -61,8 +60,15 @@
     #about-content {
         color: black;
         background-color: @background-color-components;
-        padding: 5px;
-        overflow: hidden;
+        overflow: visible;
+    }
+
+    .my-container-fluid {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
     }
 
 </style>

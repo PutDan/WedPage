@@ -8,13 +8,6 @@
         <p>{{ $t("copyright.contentlaw") }}<br />Daniel Draper<br />Hedwig-Kettler-Str. 5<br />76137 Karlsruhe</p>
         <br /> <br /> <br />
         <p class="copyright">
-            {{ $t("copyright.icons") }} <a href="https://www.freepik.com/" title="Freepik">Freepik</a>
-            {{ $t("copyright.iconsfrom") }}
-            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            {{ $t("copyright.iconslicense") }} <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                               target="_blank">CC 3.0 BY</a>
-        </p>
-        <p class="copyright">
             {{ $t("copyright.images.attribution.title") }}
             <ul>
                 <li>{{ $t("copyright.images.attribution.church")}}

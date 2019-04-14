@@ -81,4 +81,8 @@
         letter-spacing: 0;
     }
 
+    *:hover {
+        color: @selectedlink !important;
+    }
+
 </style>

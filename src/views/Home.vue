@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid id="home">
+  <div id="home">
     <parallax-image />
     <invitation id="invitation"/>
     <span id="margin-small" class="d-inline-block d-md-none"></span>
@@ -7,7 +7,7 @@
     <countdown-content data-aos="fade-down" id="countdown"/>
     <right-sided-content data-aos="fade-right" id="right-side"/>
     <left-sided-content data-aos="fade-left" id="left-side"/>
-  </b-container>
+  </div>
 </template>
 
 <style lang="less">

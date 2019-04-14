@@ -12,9 +12,3 @@
         },
     };
 </script>
-
-<style scoped lang="less">
-    img {
-        background-repeat: round;
-    }
-</style>

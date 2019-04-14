@@ -30,12 +30,12 @@ export default {
         title: 'Church Ceremony',
         where: 'Where?',
         when: 'When?',
-        date: '6th of July, 2019, Time TBD',
+        date: '6th of July, 2019, 1 PM',
         maps: 'Open in Google Maps',
     },
     leftside: {
         title: 'Reception',
-        date: '6th of July, 2019, Time TBD',
+        date: '6th of July, 2019, ~4 PM',
     },
     about: {
         headline: 'Our Story',

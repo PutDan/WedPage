@@ -10,7 +10,7 @@ export default {
         text: 'herzlich zu ihrer',
         textcont: 'Hochzeitsfeier ein.',
         headline: 'Zusammen mit ihren Familien laden DICH',
-        date: '6th of July 2019',
+        date: '6. Juli 2019',
         location: 'In der Kirche St. Bernhard',
         button: 'Mehr Details',
     },
@@ -30,12 +30,12 @@ export default {
         title: 'Gottesdienst',
         where: 'Wo?',
         when: 'Wann?',
-        date: '6. Juli, 2019, Zeit TBD',
+        date: '6. Juli, 2019, 13:00 Uhr',
         maps: 'In Google Maps öffnen',
     },
     leftside: {
         title: 'Feier',
-        date: '6. Juli, 2019, Zeit TBD',
+        date: '6. Juli, 2019, ~16:00 Uhr',
     },
     about: {
         headline: 'Über Uns',

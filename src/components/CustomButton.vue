@@ -29,6 +29,7 @@
         letter-spacing: normal;
         background-color: transparent;
         border: solid 1px @fontcolor;
+        margin: 5px;
     }
 
     #button-text {

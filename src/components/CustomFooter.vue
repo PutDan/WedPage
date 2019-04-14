@@ -31,4 +31,16 @@
         padding-bottom: 2px;
     }
 
+    a {
+        color: @fontcolor;
+    }
+
+    a:hover {
+        color: @selectedlink !important;
+    }
+
+    a:visited {
+        color: @visitedlink;
+    }
+
 </style>

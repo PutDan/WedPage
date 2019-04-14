@@ -70,10 +70,6 @@
         font-family: 'EB Garamond', sans-serif;
         letter-spacing: 8px;
     }
-
-    #content {
-    }
-
     #maps {
         font-size: 16px;
         color: @linkedel;
