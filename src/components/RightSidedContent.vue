@@ -101,6 +101,6 @@
     }
 
     #content {
-        color: @deepgreen;
+        color: @greenfont;
     }
 </style>

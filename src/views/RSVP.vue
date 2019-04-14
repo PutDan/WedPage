@@ -155,7 +155,7 @@
     @import "../style/App.less";
 
     .RSVP {
-        background-color: @deepgreen !important;
+        background-color: @background-color !important;
     }
 
     #rsvp-container {

@@ -68,12 +68,12 @@
     @import "../style/App.less";
 
     #divider {
-        background-color: @richgold;
+        background-color: @greenfont;
         margin-top: 0;
         padding-bottom: 2px;
     }
     #navbar {
-        background-color: @deepgreen !important;
+        background-color: @background-color !important;
     }
 
 </style>

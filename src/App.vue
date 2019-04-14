@@ -59,7 +59,7 @@
     }
 
     body {
-        background-color: @deepgreen !important;
+        background-color: @background-color !important;
     }
 
     #app {
@@ -67,7 +67,7 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: @richgold;
+        color: @greenfont;
     }
 
     .content {

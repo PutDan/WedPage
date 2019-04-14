@@ -107,7 +107,7 @@
     }
 
     .my-4 {
-        background-color: @richgold;
+        background-color: @greenfont;
     }
 
     .time {
@@ -123,7 +123,7 @@
     }
 
     #countdown-content {
-        background-color: @deepgreen;
+        background-color: @background-color;
         ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";       /* IE 8 */
         filter: alpha(opacity=90);  /* IE 5-7 */
         -moz-opacity: 0.9;          /* Netscape */

@@ -47,7 +47,7 @@
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/css?family=Charm');
     .circular {
-        color: @richgold;
+        color: @greenfont;
         font-family: 'Charm', cursive;
         font-size: 65px;
     }

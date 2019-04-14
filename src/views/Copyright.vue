@@ -31,7 +31,7 @@
 <style scoped lang="less">
     @import "../style/App.less";
     #divider {
-        background-color: @richgold;
+        background-color: @greenfont;
     }
 
     .copyright {

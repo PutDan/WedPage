@@ -54,7 +54,7 @@ export default {
             'Kawaguchiko in Japan, two days after climbing the close-by Mt. Fuji all the way to the top. ' +
             'Putri accepted, and they are both very excited to finally get married this year and spend the rest of ' +
             'their life together.',
-        oldImg: '2015, Muscat, Oman',
+        oldImg: ' ',
         newImg: '2019, right after the proposal, Fujikawaguchiko, Japan',
         readMore: 'Read More',
         readLess: 'Read Less',

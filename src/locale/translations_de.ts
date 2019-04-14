@@ -53,7 +53,7 @@ export default {
             'See auf Vulkanfelsen, am Fuße des Mt. Fuji, den sie 2 Tage davor erklommen hatten, einen Heiratsantrag. ' +
             'Putri nahm den Antrag an und sie beides freuen sich darauf dieses Jahr endlich zu heiraten und den Rest ' +
             'ihres Lebens miteinander zu verbringen.',
-        oldImg: '2015 Muskat, Oman',
+        oldImg: ' ',
         newImg: '2019, direkt nach dem Antrag, Fujikawaguchiko, Japan',
         readMore: 'Read More',
         readLess: 'Read Less',

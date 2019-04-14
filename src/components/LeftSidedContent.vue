@@ -71,7 +71,7 @@
     }
 
     #content {
-        background-color: @background-white;
+        background-color: @background-color;
         font-family: 'Lato', sans-serif;
         ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";       /* IE 8 */
         filter: alpha(opacity=90);  /* IE 5-7 */
@@ -101,6 +101,6 @@
     }
 
     #content {
-        color: @deepgreen;
+        color: @greenfont;
     }
 </style>

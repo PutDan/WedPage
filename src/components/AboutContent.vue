@@ -40,7 +40,7 @@
 
     #about-content {
         color: black;
-        background-color: @deepgreen;
+        background-color: @background-color;
         padding: 5px;
         ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";       /* IE 8 */
         filter: alpha(opacity=90);  /* IE 5-7 */
