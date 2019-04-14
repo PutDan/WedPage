@@ -4,7 +4,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10467.603032511342!2d8.426661!3d49.012473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9e5a1ff56ad8e19!2sHoepfner+Burghof+Brauereiausschank+-+Hotel!5e0!3m2!1sen!2sde!4v1546772890208" width="350" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </b-modal>
         <b-row>
-            <b-col class="border border-warning" id="content">
+            <b-col id="content">
                 <b-row>
                     <b-col>
                         <b-row>
@@ -35,12 +35,8 @@
                             </b-col>
                         </b-row>
                     </b-col>
-                    <b-col class="d-none d-sm-inline-block" col cols="3">
-                        <parallax-container id="picture">
-                            <parallax-element  class="background-image" :parallaxStrength="2" :type="'depth'">
-                                <b-img fluid alt="Höpfner Brewery" height="25px" rounded="circle" thumbnail :src="require('../assets/hoepfner.jpg')"></b-img>
-                            </parallax-element>
-                        </parallax-container>
+                    <b-col class="d-none d-sm-inline-block">
+                        <custom-image name="hoepfner.jpg"></custom-image>
                     </b-col>
                 </b-row>
             </b-col>
@@ -48,8 +44,11 @@
     </b-container>
 </template>
 <script>
+    import CustomImage from './CustomImage';
+
     export default {
         name: 'left-sided-content',
+        components: {CustomImage},
         data()  {
             return {
                 showMapsModal: false,
@@ -60,29 +59,24 @@
 <style scoped lang="less">
     @import "../style/App.less";
     //noinspection CssUnknownTarget
-    @import (css) url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise');
-    //noinspection CssUnknownTarget
-    @import (css) url('https://fonts.googleapis.com/css?family=Lato');
+    @import (css) url('https://fonts.googleapis.com/css?family=EB+Garamond');
     //noinspection CssUnknownTarget
     @import (css) url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+    .container {
+        max-width: 750px;
+        background-color: @background-color-components;
+    }
+
     #title {
-        font-family: 'Monsieur La Doulaise', cursive;
+        font-family: 'EB Garamond', sans-serif;
+        letter-spacing: 8px;
     }
 
     #content {
-        background-color: @background-color;
-        font-family: 'Lato', sans-serif;
-        ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";       /* IE 8 */
-        filter: alpha(opacity=90);  /* IE 5-7 */
-        -moz-opacity: 0.9;          /* Netscape */
-        -khtml-opacity: 0.9;        /* Safari 1.x */
-        opacity: 0.9;
+        background-color: @background-color-components;
     }
 
-    #where {
-        font-family: 'Lato', sans-serif;
-    }
 
     #maps {
         font-size: 16px;

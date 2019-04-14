@@ -1,11 +1,11 @@
 <template>
     <b-container id="container">
-        <b-img thumbnail rounded="circle" :src="require('../assets/' + name +'.png')"></b-img>
+        <b-img thumbnail rounded="circle" :src="require('../assets/' + name)"></b-img>
     </b-container>
 </template>
 <script>
     export default {
-        name: 'personAvatar',
+        name: 'customImage',
         props: {
             name: {}
         }

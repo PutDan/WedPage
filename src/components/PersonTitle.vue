@@ -7,17 +7,17 @@
         </b-row>
         <b-row>
             <b-col>
-                <personAvatar :name="name"/>
+                <customImage :name="name + '.png'"/>
             </b-col>
         </b-row>
     </b-col>
 </template>
 <script>
-    import personAvatar from './PersonAvatar'
+    import customImage from './CustomImage'
 
     export default {
         name: 'person-title',
-        components: {personAvatar},
+        components: {customImage},
         props: {
             name: {}
         }

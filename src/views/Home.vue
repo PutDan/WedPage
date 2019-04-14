@@ -12,6 +12,7 @@
 
 <style lang="less">
     @import "../style/App.less";
+
     #countdown {
       margin-top: 10%;
     }
@@ -40,9 +41,10 @@
       margin-top: 350px;
     }
 
-  #about {
-    margin-top: 5%;
-  }
+    #about {
+      margin-top: 5%;
+    }
+
 </style>
 
 

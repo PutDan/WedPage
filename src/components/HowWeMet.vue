@@ -9,7 +9,7 @@
             <b-col>
                 <div id="img-old">
                     <b-col>
-                        <b-img  alt="Us in 2015" thumbnail height="350px" width="250px" :src="require('../assets/IMG_0548.jpg')"></b-img>
+                        <b-img  alt="Us in 2015" thumbnail height="350px" width="250px" :src="require('../assets/met_image.jpg')"></b-img>
                     </b-col>
                     <b-col>{{ $t('met.oldImg') }}</b-col>
                 </div>

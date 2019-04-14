@@ -19,7 +19,7 @@
     import CustomFooter from './components/CustomFooter';
 
     export default {
-        components: {CustomFooter, CustomNavbar },
+        components: {CustomFooter, CustomNavbar},
         data() {
             return {
                 iconDe,
@@ -73,6 +73,7 @@
     .content {
         min-height: calc(100vh - 120px);
     }
+
     .footer {
         height: 100px;
     }

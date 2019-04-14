@@ -23,7 +23,7 @@
     }
 
     #name {
-        overflow: visible;
+        margin-left: 30px;
     }
 
 </style>
