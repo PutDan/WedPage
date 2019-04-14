@@ -75,6 +75,9 @@
     }
 
     .footer {
+        margin-top: calc(30% + 50px);
+        letter-spacing: 0;
+        float: bottom;
         height: 100px;
     }
 

@@ -1,8 +1,8 @@
 <template>
     <div id="nav">
-        <b-navbar id="navbar" toggleable="sm" variant="dark" type="dark" sticky>
+        <b-navbar id="navbar" toggleable="sm">
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-            <b-navbar-brand to="/home">Daniel&Putri</b-navbar-brand>
+            <b-navbar-brand class="text" to="/home">Daniel&Putri</b-navbar-brand>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
                     <b-nav-item to="/home">{{ $t("link.home_link") }}</b-nav-item>
@@ -68,12 +68,17 @@
     @import "../style/App.less";
 
     #divider {
-        background-color: @fontcolor;
+        background-color: @image-background-color;
         margin-top: 0;
         padding-bottom: 2px;
     }
     #navbar {
-        background-color: @background-color !important;
+        background-color: @background-color-components !important;
+    }
+
+    *, span {
+        color: @fontcolor !important;
+        letter-spacing: 0;
     }
 
 </style>

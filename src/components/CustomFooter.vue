@@ -22,12 +22,12 @@
     }
 
     #footer {
-        background-color: @background-color;
+        background-color: @background-color-components;
         padding-bottom: 5px;
     }
 
     #divider {
-        background-color: @fontcolor;
+        background-color: @image-background-color;
         padding-bottom: 2px;
     }
 

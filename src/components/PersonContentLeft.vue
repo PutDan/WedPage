@@ -1,8 +1,7 @@
 <template>
-    <b-container id="container" fixed>
+    <b-container id="container">
         <b-row>
-            <person-text :name="name"/>
-            <person-title :name="name"/>
+            <person-title id="margin" :name="name" :align="'right'"/>
         </b-row>
         <b-row><br /></b-row>
     </b-container>
@@ -24,6 +23,11 @@
 
     #container {
         color: @fontcolor;
+    }
+
+    #margin {
+        margin-right: 0;
+        margin-left: 0;
     }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div id="about-container">
-        <b-container fluid id="about-content" class="rounded border">
+        <b-container fluid id="about-content">
             <a id="about"></a>
             <b-row id="first-row">
                 <b-col>
@@ -63,10 +63,6 @@
         background-color: @background-color-components;
         padding: 5px;
         overflow: hidden;
-    }
-
-    .border {
-        background-color: @image-background-color;
     }
 
 </style>

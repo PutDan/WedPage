@@ -2,12 +2,7 @@
     <b-col>
         <b-row>
             <b-col>
-                <p class="title" v-resize-text="{ratio: '1.0', minFontSize: '25px', maxFontSize: '45px', delay: '20'}">{{ $t('person.' + name + '.title') }}</p>
-            </b-col>
-        </b-row>
-        <b-row>
-            <b-col>
-                <customImage :name="name + '.png'"/>
+                <customImage :name="name + '.png'" :align="align"/>
             </b-col>
         </b-row>
     </b-col>
@@ -19,7 +14,8 @@
         name: 'person-title',
         components: {customImage},
         props: {
-            name: {}
+            name: {},
+            align: {},
         }
     }
 </script>

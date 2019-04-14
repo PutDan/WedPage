@@ -1,8 +1,7 @@
 <template>
     <b-container id="container">
         <b-row>
-            <person-title :name="name"/>
-            <person-text :name="name"/>
+            <person-title :name="name" :align="'left'"/>
         </b-row>
     </b-container>
 </template>
