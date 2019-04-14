@@ -1,13 +1,23 @@
 <template>
     <div id="about-container">
-        <b-container fluid id="about-content" class="rounded border border-warning">
+        <b-container fluid id="about-content" class="rounded border">
             <a id="about"></a>
-            <b-row class="border-bottom">
-                <b-col class="border-right">
-                    <PersonContent :name="name1"/>
+            <b-row id="first-row">
+                <b-col>
+                    <p id="headline" v-resize-text="{ratio: '1.0', minFontSize: '25px', maxFontSize: '45px', delay: '20'}">{{ $t("about.headline") }}</p>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col>
+                    <vertical-divider />
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col>
+                    <PersonContentLeft :name="name1"/>
                 </b-col>
                 <b-col>
-                    <PersonContent :name="name2"/>
+                    <PersonContentRight :name="name2"/>
                 </b-col>
             </b-row>
             <br />
@@ -16,15 +26,17 @@
     </div>
 </template>
 <script>
-    import PersonContent from './PersonContent';
+    import PersonContentLeft from './PersonContentLeft';
+    import PersonContentRight from './PersonContentRight';
     import HowWeMet from './HowWeMet';
+    import VerticalDivider from './VerticalDivider';
 
     const name1 = 'putri';
     const name2 = 'daniel';
 
     export default {
         name: 'about-content',
-        components: {HowWeMet, PersonContent},
+        components: {VerticalDivider, HowWeMet, PersonContentLeft, PersonContentRight},
         data() {
             return {
                 name1,
@@ -36,18 +48,25 @@
 <style scoped lang="less">
     @import "../style/App.less";
     //noinspection CssUnknownTarget
-    @import (css) url('https://fonts.googleapis.com/css?family=Charm');
+    @import (css) url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
+    #first-row {
+        margin-top: 100px;
+    }
+
+    #headline {
+        color: @fontcolor;
+        font-family: 'EB Garamond', sans-serif;
+    }
     #about-content {
         color: black;
-        background-color: @background-color;
+        background-color: @background-color-components;
         padding: 5px;
-        ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";       /* IE 8 */
-        filter: alpha(opacity=90);  /* IE 5-7 */
-        -moz-opacity: 0.9;          /* Netscape */
-        -khtml-opacity: 0.9;        /* Safari 1.x */
-        opacity: 0.9;
         overflow: hidden;
+    }
+
+    .border {
+        background-color: @image-background-color;
     }
 
 </style>

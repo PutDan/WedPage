@@ -6,11 +6,13 @@ export default {
         photos_link: 'Fotos',
         languages: 'Sprachen',
     },
-    circular: {
-        invitation2: 'herzlich zu ihrer',
-        invitation3: 'Hochzeitsfeier ein.',
-        invitation: 'Zusammen mit ihren Familien laden DICH',
+    invitation: {
+        text: 'herzlich zu ihrer',
+        textcont: 'Hochzeitsfeier ein.',
+        headline: 'Zusammen mit ihren Familien laden DICH',
         date: '6th of July 2019',
+        location: 'In der Kirche St. Bernhard',
+        button: 'Mehr Details',
     },
     timer: {
         day: 'Samstag,',
@@ -36,7 +38,7 @@ export default {
         date: '6. Juli, 2019, Zeit TBD',
     },
     about: {
-        title: 'Über uns',
+        headline: 'Über Uns',
     },
     met: {
         title: 'Wie wir uns kennengelernt haben',

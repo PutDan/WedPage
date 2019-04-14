@@ -1,26 +1,18 @@
 <template>
     <div id="container">
         <a id="countdown"></a>
-        <b-jumbotron fixed id="countdown-content" border-variant="warning">
+        <b-jumbotron fluid id="countdown-content">
             <template slot="header">
                 <b-container>
                     <b-row>
-                        <b-col class="d-none d-md-inline-block">
-                            <!--suppress CheckImageSize -->
-                            <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" />
-                        </b-col>
                         <b-col>
-                            <p class="written1" v-resize-text="{minFontSize: '65px', maxFontSize: '100px', delay: '20'}">{{ $t("timer.day") }}</p>
-                        </b-col>
-                        <b-col class="d-none d-md-inline-block">
-                            <!--suppress CheckImageSize -->
-                            <b-img :src="require('../assets/wedding-rings.svg')" height="75px" alt="Wedding time" />
+                            <p id="day" v-resize-text="{minFontSize: '65px', maxFontSize: '100px', delay: '20'}">{{ $t("timer.day") }}</p>
                         </b-col>
                     </b-row>
                     <b-row>
                         <b-col class="d-none d-md-inline-block"></b-col>
                         <b-col>
-                            <p class="written2" v-resize-text="{minFontSize: '20px', maxFontSize: '55px', delay: '20'}">{{ $t("timer.date") }}</p>
+                            <p v-resize-text="{minFontSize: '20px', maxFontSize: '25px', delay: '20'}">{{ $t("timer.date") }}</p>
                         </b-col>
                         <b-col class="d-none d-md-inline-block"></b-col>
                     </b-row>
@@ -75,31 +67,28 @@
                 </vac>
             </template>
             <hr class="my-4">
-            <b-btn class="my-button" variant="primary" to="/rsvp">{{ $t("timer.button.rsvp") }}</b-btn>
-            <b-btn variant="success" href="#about">{{ $t("timer.button.learn_more") }}</b-btn>
+            <custom-button :linkTo="'/rsvp'" :text-translation-id="'timer.button.rsvp'" />
+            <custom-button :target="'#'" :scroll-to="'#about'" :text-translation-id="'timer.button.learn_more'" />
         </b-jumbotron>
     </div>
 </template>
 <script>
+    import CustomButton from './CustomButton';
     export default {
         name: 'countdown-content',
+        components: {CustomButton},
     };
 </script>
 
 
-<!--suppress CssUnknownTarget -->
 <style scoped lang="less">
     @import "../style/App.less";
-    @import (css) url('https://fonts.googleapis.com/css?family=Charm');
-    @import (css) url('https://fonts.googleapis.com/css?family=Lato');
-    @import (css) url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise');
+    //noinspection CssUnknownTarget
+    @import (css) url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
-    .written1 {
-        font-family: 'Monsieur La Doulaise', cursive;
-    }
-
-    .written2 {
-        font-family: 'Charm', cursive;
+    #day {
+        font-family: 'EB Garamond', sans-serif;
+        letter-spacing: 8px;
     }
 
     .colon {
@@ -118,17 +107,8 @@
         font-size: 25px;
     }
 
-    #countdown-progress {
-        font-family: 'Lato', sans-serif;
-    }
-
     #countdown-content {
-        background-color: @background-color;
-        ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";       /* IE 8 */
-        filter: alpha(opacity=90);  /* IE 5-7 */
-        -moz-opacity: 0.9;          /* Netscape */
-        -khtml-opacity: 0.9;        /* Safari 1.x */
-        opacity: 0.9;
+        background-color: @background-color-components;
     }
 
     .my-button {

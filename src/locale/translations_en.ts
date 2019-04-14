@@ -6,15 +6,17 @@ export default {
         photos_link: 'Photos',
         languages: 'Languages',
     },
-    circular: {
-        invitation2: 'joyfully invite you to their',
-        invitation3: 'wedding celebration.',
-        invitation: 'Together with their families',
+    invitation: {
+        text: 'joyfully invite you to their',
+        textcont: 'wedding celebration.',
+        headline: 'Together with their families',
         date: '6th of July 2019',
+        location: 'At St. Bernhard Church',
+        button: 'More details',
     },
     timer: {
         day: 'Saturday,',
-        date: '07/06/2019',
+        date: 'Time remaining',
         days: 'Days',
         hours: 'Hours',
         minutes: 'Minutes',
@@ -36,7 +38,7 @@ export default {
         date: '6th of July, 2019, Time TBD',
     },
     about: {
-        title: 'About Us',
+        headline: 'Our Story',
     },
     met: {
         title: 'How we Met',

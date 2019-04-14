@@ -2,17 +2,16 @@
   <b-container fluid id="home">
     <parallax-image />
     <invitation id="invitation"/>
+    <span id="margin-small" class="d-inline-block d-md-none"></span>
+    <about-content data-aos="fade-up" id="about"/>
     <countdown-content data-aos="fade-down" id="countdown"/>
     <right-sided-content data-aos="fade-right" id="right-side"/>
     <left-sided-content data-aos="fade-left" id="left-side"/>
-    <about-content data-aos="fade-up" id="about"/>
   </b-container>
 </template>
 
 <style lang="less">
     @import "../style/App.less";
-    //noinspection CssUnknownTarget
-    @import (css) url('https://fonts.googleapis.com/css?family=Charm');
     #countdown {
       margin-top: 10%;
     }
@@ -37,11 +36,13 @@
       margin-top: 100px;
     }
 
-    #about {
-      float: bottom;
-      z-index: 10;
-      margin-top: 950px;
+    #margin-small {
+      margin-top: 350px;
     }
+
+  #about {
+    margin-top: 5%;
+  }
 </style>
 
 
