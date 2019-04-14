@@ -31,7 +31,7 @@
 <script>
     import ResizeText from 'vue-resize-text';
     export default {
-        name: 'circular-names',
+        name: 'invitation',
         directives: {
             ResizeText,
         },

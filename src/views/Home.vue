@@ -1,7 +1,7 @@
 <template>
   <b-container fluid id="home">
     <parallax-image />
-    <circular-names id="names"/>
+    <invitation id="invitation"/>
     <countdown-content data-aos="fade-down" id="countdown"/>
     <right-sided-content data-aos="fade-right" id="right-side"/>
     <left-sided-content data-aos="fade-left" id="left-side"/>
@@ -17,7 +17,7 @@
       margin-top: 10%;
     }
 
-    #names {
+    #invitation {
       float: top;
       position: absolute;
       top: 100px;
@@ -48,7 +48,7 @@
 <script>
   import ParallaxImage from '../components/ParallaxImage';
   import CountdownContent from '../components/CountdownContent';
-  import CircularNames from '../components/CircularNames';
+  import invitation from '../components/Invitation';
   import AboutContent from '../components/AboutContent';
   import RightSidedContent from '../components/RightSidedContent';
   import LeftSidedContent from '../components/LeftSidedContent';
@@ -57,7 +57,7 @@
         components: {
           RightSidedContent,
           AboutContent,
-          CircularNames,
+          invitation,
           CountdownContent,
           ParallaxImage,
           LeftSidedContent,
