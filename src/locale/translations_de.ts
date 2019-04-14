@@ -47,7 +47,8 @@ export default {
             'Putri spielt Geige. Obwohl sie während des Semesters jeden Montag zusammen Orchesterprobe hatten, ' +
             'dauerte es bis zum jährlichen Probenwochenende, dass sie sich wirklich gegenseitig vorstellten. Mit ' +
             'Beginn des neuen Semesters hatten sie beide zufällig die gleiche Physik-Vorlesung gewählt und ' +
-            'verbrachten dort, und in anderen Informatik-Vorlesungen immer mehr Zeit miteinander.',
+            'verbrachten dort, und in anderen Informatik-Vorlesungen immer mehr Zeit miteinander, und, wie das so ist,' +
+            'waren nach kurzer Zeit bereits ein Pärchen.',
         description2: 'Nach ein paar Wochen des gemeinsamen Vorlesungsbesuchens, sowie der gemeinsamen Proben, fasste' +
             'Daniel sich endlich ein Herz und lad Putri auf ein Date ein. Wie das so ist, verliebten die beiden sich' +
             'schnell und wurden am 29. Mai 2015 ein Paar. In der gleichen Woche stellte Daniel seine neue Freundin ' +

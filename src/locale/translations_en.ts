@@ -48,7 +48,7 @@ export default {
             'during the term, it wasn\'t until the yearly rehearsal weekend in Bärenthal in France, that they ' +
             'actually were introduced to each other. After further getting to know each other in Physics and ' +
             'Computer Science class after the start of the new semester they soon started spending more ' +
-            'and more time together. ',
+            'and more time together, and, as these stories go, quickly fell in Love.',
         description2: 'After a few weeks of going to class and rehearsal together, Daniel finally got the hint and ' +
             'asked Putri on a date. As these things go they fell in love quickly and started officially dating on' +
             'the 29th of May, 2015. Coincidentally this was the same week the yearly "Strohhutfest" happened in ' +
