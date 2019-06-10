@@ -8,7 +8,7 @@
     </b-col>
 </template>
 <script>
-    import customImage from './CustomImage'
+    import customImage from './CustomImage';
 
     export default {
         name: 'person-title',
@@ -16,8 +16,8 @@
         props: {
             name: {},
             align: {},
-        }
-    }
+        },
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

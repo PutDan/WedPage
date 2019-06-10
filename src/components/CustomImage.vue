@@ -8,9 +8,9 @@
         name: 'customImage',
         props: {
             name: {},
-            align: {}
-        }
-    }
+            align: {},
+        },
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

@@ -10,9 +10,9 @@
     export default {
         name: 'person-text',
         props: {
-            name: {}
-        }
-    }
+            name: {},
+        },
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

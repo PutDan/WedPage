@@ -12,7 +12,7 @@
             textTranslationId: {},
             linkTo: {},
         },
-    }
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

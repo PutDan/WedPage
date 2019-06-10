@@ -1,5 +1,14 @@
 <template>
     <div id="nav">
+        <b-modal centered v-model="showGiftsModal" id="giftsModal">
+            <template slot="modal-title">
+                {{ $t("link.gift_registry") }}
+            </template>
+            <div class="d-block text-center" @click="">
+                <h3>{{ $t("link.gift_password_text")}}</h3>
+            </div>
+            <b-button id="modal-button" class="mt-3" block href="https://hochzeits-tisch.de/tische/daniel%20draper-patricia%20djami">{{ $t("link.gift_registry_nav") }}<i id="link-icon" class="material-icons">link</i></b-button>
+        </b-modal>
         <b-navbar id="navbar" toggleable="sm">
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
             <b-navbar-brand class="text" to="/home">Daniel&Putri</b-navbar-brand>
@@ -8,6 +17,7 @@
                     <b-nav-item to="/home">{{ $t("link.home_link") }}</b-nav-item>
                     <b-nav-item to="/home" v-scroll-to="'#about'">{{ $t("link.about_link") }}</b-nav-item>
                     <b-nav-item href="https://docs.google.com/forms/d/e/1FAIpQLScv3t1Ugo3j7wURajMSGrt_NfEE8udQuTICwU8gs9Iwqmo-Gw/formResponse">{{ $t("link.rsvp_link") }}</b-nav-item>
+                    <b-nav-item @click="showGiftsModal = true">{{ $t("link.gift_registry") }}</b-nav-item>
                     <b-nav-item to="/photos" disabled>{{ $t("link.photos_link") }}</b-nav-item>
                 </b-navbar-nav>
                 <!-- Right aligned nav items -->
@@ -62,10 +72,22 @@
             iconIn: {},
             selectLanguage: {},
         },
+        data()  {
+            return {
+                showGiftsModal: false,
+            };
+        },
     };
 </script>
 <style lang="less" scoped>
     @import "../style/App.less";
+
+    //noinspection CssUnknownTarget
+    @import (css) url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+    .material-icons {
+        cursor: pointer;
+    }
 
     #divider {
         background-color: @image-background-color;

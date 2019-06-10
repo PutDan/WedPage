@@ -3,8 +3,8 @@
 </template>
 <script>
     export default {
-        name: 'vertical-divider'
-    }
+        name: 'vertical-divider',
+    };
 </script>
 <style scoped lang="less">
     @import "../style/App.less";

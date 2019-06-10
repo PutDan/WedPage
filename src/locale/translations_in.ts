@@ -5,6 +5,9 @@ export default {
         rsvp_link: 'RSVP',
         photos_link: 'Foto',
         languages: 'Bahasa',
+        gift_registry: 'Gift Registry',
+        gift_registry_nav: 'Go to the Gift Registry',
+        gift_password_text: 'Password to see registry: 6SS495',
     },
     invitation: {
         text: 'joyfully invite you to their',
