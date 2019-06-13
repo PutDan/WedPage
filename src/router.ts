@@ -28,5 +28,10 @@ export default new Router({
             name: 'copyright',
             component: () => import(/* webpackChunkName: "copyright" */ './views/Copyright.vue'),
         },
+        {
+            path: '/photos',
+            name: 'photos',
+            component: () => import(/* webpackChunkName: "photos" */ './views/Photos.vue'),
+        },
     ],
 });

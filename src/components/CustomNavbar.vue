@@ -18,7 +18,7 @@
                     <b-nav-item to="/home" v-scroll-to="'#about'">{{ $t("link.about_link") }}</b-nav-item>
                     <b-nav-item href="https://docs.google.com/forms/d/e/1FAIpQLScv3t1Ugo3j7wURajMSGrt_NfEE8udQuTICwU8gs9Iwqmo-Gw/formResponse">{{ $t("link.rsvp_link") }}</b-nav-item>
                     <b-nav-item @click="showGiftsModal = true">{{ $t("link.gift_registry") }}</b-nav-item>
-                    <b-nav-item to="/photos" disabled>{{ $t("link.photos_link") }}</b-nav-item>
+                    <b-nav-item to="/photos">{{ $t("link.photos_link") }}</b-nav-item>
                 </b-navbar-nav>
                 <!-- Right aligned nav items -->
                 <b-navbar-nav class="ml-auto">
