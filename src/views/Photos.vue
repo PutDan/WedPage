@@ -8,6 +8,9 @@
                 @click="index = imageIndex"
                 :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
         ></div>
+        <div>
+            <p>{{ $t("photos.attribution")}}<br /><a href="https://www.instagram.com/ryan_reinaldo/">(@Ryan_Reinaldo)</a></p>
+        </div>
     </div>
 </template>
 

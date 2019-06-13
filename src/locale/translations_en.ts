@@ -113,4 +113,7 @@ export default {
         attending: 'Yes, I am attending',
         partner: 'Yes, I am bringing a partner!',
     },
+    photos: {
+        attribution: 'Photos taken by: Ryan Reinaldo',
+    },
 };

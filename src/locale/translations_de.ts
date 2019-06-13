@@ -115,4 +115,7 @@ export default {
         attending: 'Ja, ich komme zur Hochzeit',
         partner: 'Ja, ich bringe jemanden mit',
     },
+    photos: {
+        attribution: 'Photos von: Ryan Reinaldo',
+    },
 };
