@@ -19,11 +19,6 @@ export default new Router({
             component: Home,
         },
         {
-            path: '/RSVP',
-            name: 'RSVP',
-            component: () => import(/* webpackChunkName: "rsvp" */ './views/RSVP.vue'),
-        },
-        {
             path: '/copyright',
             name: 'copyright',
             component: () => import(/* webpackChunkName: "copyright" */ './views/Copyright.vue'),
