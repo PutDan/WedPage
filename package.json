@@ -27,7 +27,7 @@
     "vue-mouse-parallax": "^0.9.2",
     "vue-parallaxy": "^1.1.1",
     "vue-property-decorator": "^7.3.0",
-    "vue-resize-text": "^0.1.0",
+    "vue-resize-text": "^0.1.1",
     "vue-resource": "^1.5.3",
     "vue-router": "^3.0.6",
     "vue-scrollto": "^2.20.0",
