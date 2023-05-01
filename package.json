@@ -23,7 +23,7 @@
     "vue-class-component": "^7.2.6",
     "vue-form-generator": "^2.3.4",
     "vue-gallery": "^2.0.0",
-    "vue-loader": "^17.0.1",
+    "vue-loader": "^17.1.0",
     "vue-mouse-parallax": "^0.9.2",
     "vue-parallaxy": "^1.1.1",
     "vue-property-decorator": "^9.1.2",
