@@ -41,7 +41,7 @@
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-typescript": "^3.8.1",
     "@vue/cli-service": "^5.0.8",
-    "css-loader": "^6.7.4",
+    "css-loader": "^6.8.1",
     "less": "^3.13.1",
     "less-loader": "^4.1.0",
     "style-loader": "^0.23.1",
